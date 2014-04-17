@@ -21,3 +21,9 @@ httpd = ServerClass(server_address, HandlerClass)
 sa = httpd.socket.getsockname()
 print "Serving HTTP on", sa[0], "port", sa[1], "..."
 httpd.serve_forever()
+
+
+# def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
+#     server_address = ('', 8000)
+#     httpd = server_class(server_address, handler_class)
+#     httpd.serve_forever()

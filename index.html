@@ -5,25 +5,106 @@
 
     <script src="js/sigma/sigma.min.js"></script>
     <script src="js/sigma/plugins/sigma.parsers.json.min.js"></script>
+    <script src="js/sigma/plugins/sigma.plugins.neighborhoods.min.js"></script>
+
+    <style>
+        #sigma-container {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: 50px 40px 50px 40px;
+        }
+    </style>
 </head>
 <body>
 
 <div id="container">
-  <style>
-    #graph-container {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      position: absolute;
-    }
-  </style>
-  <div id="graph-container"></div>
+    <div id="header"> <p>TS graph visualization</p> </div>
+    <div id="sigma-container"></div>
 </div>
+
 <script>
-sigma.parsers.json('data/mld_vgraph.json', {
-  container: 'graph-container'
+
+// Conf variables
+var graph_path = 'data/mld_vgraph.json';
+var sigma_settings = {
+    labelSize: 'proportional',
+    labelThreshold: 15,
+    defaultLabelSize: 8,
+    scalingMode: 'inside'
+};
+
+// Add methods to sigma before instanciating the global object
+sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+    var k, neighbors = {}, index = this.allNeighborsIndex[nodeId] || {};
+    for (k in index)
+        neighbors[k] = this.nodesIndex[k];
+
+    return neighbors;
 });
+
+sigma.parsers.json(
+    graph_path,
+    {
+        container: 'sigma-container',
+        settings: sigma_settings
+    },
+    function(s) {
+        // We first need to save the original colors of our
+        // nodes and edges, like this:
+        s.graph.nodes().forEach(function(n) {
+            n.originalColor = n.color;
+               if (n.name !== undefined || n.name !== null ) {
+                    n.label = n.name;
+               }
+        });
+        s.graph.edges().forEach(function(e) {
+            e.originalColor = e.color;
+        });
+
+        // Click node event
+        s.bind('clickNode', function(e) {
+            var nodeId = e.data.node.id;
+            var toKeep = s.graph.neighbors(nodeId);
+            toKeep[nodeId] = e.data.node;
+
+            s.graph.nodes().forEach(function(n) {
+
+                if (toKeep[n.id]) {
+                    console.log('clickNode: ', n);
+                    n.color = n.originalColor;
+                }
+                else {
+                    n.color = '#eee';
+                }
+            });
+
+            s.graph.edges().forEach(function(e) {
+                if (toKeep[e.source] && toKeep[e.target])
+                    e.color = e.originalColor;
+                else
+                    e.color = '#eee';
+            });
+
+            s.refresh();
+        });
+
+        // Click stage event
+        s.bind('clickStage', function(e) {
+            s.graph.nodes().forEach(function(n) {
+                n.color = n.originalColor;
+            });
+
+            s.graph.edges().forEach(function(e) {
+                e.color = e.originalColor;
+            });
+
+            s.refresh();
+        });
+    }
+);
 </script>
 
 </body>
