@@ -1,110 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TS graph visualization</title>
+    <title>Brain activation timeline</title>
 
-    <script src="js/sigma/sigma.min.js"></script>
-    <script src="js/sigma/plugins/sigma.parsers.json.min.js"></script>
-    <script src="js/sigma/plugins/sigma.plugins.neighborhoods.min.js"></script>
+    <script src="js/d3/d3.min.js" charset="utf-8"></script>
+    <script src="js/sigma/sigma.min.js" charset="utf-8"></script>
+    <script src="js/sigma/plugins/sigma.parsers.json.min.js" charset="utf-8"></script>
+    <script src="js/sigma/plugins/sigma.plugins.neighborhoods.min.js" charset="utf-8"></script>
 
     <style>
-        #sigma-container {
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0 0 0 0;
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 0 0 0 0;
+        }
+
+        #top-container {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        .title {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 64px;
+            font-weight: 300;
+            letter-spacing: -2px;
+        }
+
+        #canvas-container {
+            top: 150px;
+            bottom: 100px;
+            left: 60px;
+            right: 60px;
             position: absolute;
-            margin: 50px 40px 50px 40px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        #sigma-container {
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            position: absolute;
         }
     </style>
 </head>
 <body>
 
-<div id="container">
-    <div id="header"> <p>TS graph visualization</p> </div>
-    <div id="sigma-container"></div>
+<div id="top-container">
+    <header>
+        <h1 class="title"> Brain activation timeline </h1>
+    </header>
+    <div id="canvas-container">
+        <div id="sigma-container"></div>
+    </div>
 </div>
 
 <script>
 
-// Conf variables
-var graph_path = 'data/mld_vgraph.json';
-var sigma_settings = {
-    labelSize: 'proportional',
-    labelThreshold: 15,
-    defaultLabelSize: 8,
-    scalingMode: 'inside'
-};
+;(function(undefined) {
+    'use strict';
+    var that = this;
+    // Conf variables
+    var graph_path = 'data/mld_vgraph.json';
+    var sigma_settings = {
+        labelSize: 'proportional',
+        labelThreshold: 15,
+        defaultLabelSize: 10,
+        scalingMode: 'inside',
+    //    zoomMin: 1/16,
+    //    zoomMax: 4
+        zoomMin: 1,
+        zoomMax: 1
+    };
+    var sigmaInst = null; // sigma instance
 
-// Add methods to sigma before instanciating the global object
-sigma.classes.graph.addMethod('neighbors', function(nodeId) {
-    var k, neighbors = {}, index = this.allNeighborsIndex[nodeId] || {};
-    for (k in index)
-        neighbors[k] = this.nodesIndex[k];
+    that.exec = function() {
+        // Add methods to sigma before instanciating the global object
+        sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+            var k, neighbors = {}, index = this.allNeighborsIndex[nodeId] || {};
+            for (k in index)
+                neighbors[k] = this.nodesIndex[k];
 
-    return neighbors;
-});
+            return neighbors;
+        });
 
-sigma.parsers.json(
-    graph_path,
-    {
-        container: 'sigma-container',
-        settings: sigma_settings
-    },
-    function(s) {
-        // We first need to save the original colors of our
-        // nodes and edges, like this:
-        s.graph.nodes().forEach(function(n) {
+        // Parse graph and call main function on finish
+        sigma.parsers.json(
+            graph_path,
+            {
+                type: 'canvas',
+                container: 'sigma-container',
+                settings: sigma_settings
+            },
+            function(s) {  // main
+                sigmaInst = s;
+                _postProcessGraph();
+                _bindEvents();
+
+                // d3.selectAll("#top-container").style("background-color", "red");
+            }
+        );
+    };
+
+    function _postProcessGraph() {
+        sigmaInst.graph.nodes().forEach(function(n) {
             n.originalColor = n.color;
-               if (n.name !== undefined || n.name !== null ) {
-                    n.label = n.name;
-               }
+            if (n.name !== undefined || n.name !== null ) {
+                n.label = n.name;
+            }
         });
-        s.graph.edges().forEach(function(e) {
+        sigmaInst.graph.edges().forEach(function(e) {
             e.originalColor = e.color;
-        });
-
-        // Click node event
-        s.bind('clickNode', function(e) {
-            var nodeId = e.data.node.id;
-            var toKeep = s.graph.neighbors(nodeId);
-            toKeep[nodeId] = e.data.node;
-
-            s.graph.nodes().forEach(function(n) {
-
-                if (toKeep[n.id]) {
-                    console.log('clickNode: ', n);
-                    n.color = n.originalColor;
-                }
-                else {
-                    n.color = '#eee';
-                }
-            });
-
-            s.graph.edges().forEach(function(e) {
-                if (toKeep[e.source] && toKeep[e.target])
-                    e.color = e.originalColor;
-                else
-                    e.color = '#eee';
-            });
-
-            s.refresh();
-        });
-
-        // Click stage event
-        s.bind('clickStage', function(e) {
-            s.graph.nodes().forEach(function(n) {
-                n.color = n.originalColor;
-            });
-
-            s.graph.edges().forEach(function(e) {
-                e.color = e.originalColor;
-            });
-
-            s.refresh();
+            e.type = 'curve';
         });
     }
-);
+
+    function _bindEvents() {
+        sigmaInst.bind('clickNode', _onClickNode);
+        sigmaInst.bind('clickStage', _onClickStage);
+        sigmaInst.camera.bind('coordinatesUpdated', _onCameraUpdate);
+    }
+
+    function _onClickNode(event) {
+        var nodeId = event.data.node.id;
+        var toKeep = sigmaInst.graph.neighbors(nodeId);
+        toKeep[nodeId] = event.data.node;
+
+        sigmaInst.graph.nodes().forEach(function(n) {
+
+            if (toKeep[n.id]) {
+                console.log('clickNode: ', n);
+                n.color = n.originalColor;
+            }
+            else {
+                n.color = '#eee';
+            }
+        });
+
+        sigmaInst.graph.edges().forEach(function(e) {
+            if (toKeep[e.source] && toKeep[e.target])
+                e.color = e.originalColor;
+            else
+                e.color = '#eee';
+        });
+
+        sigmaInst.refresh();
+    }
+
+    function _onClickStage(event) {
+        sigmaInst.graph.nodes().forEach(function(n) {
+            n.color = n.originalColor;
+        });
+
+        sigmaInst.graph.edges().forEach(function(e) {
+            e.color = e.originalColor;
+        });
+
+        sigmaInst.refresh();
+    }
+
+    function _onCameraUpdate(event) {
+        console.log(event.target);
+    }
+
+    // Run application
+    that.exec();
+
+}).call(this); // end anonymous namespace
+
 </script>
 
 </body>
