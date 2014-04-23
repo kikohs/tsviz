@@ -5,8 +5,7 @@
 
     <script src="js/d3/d3.min.js" charset="utf-8"></script>
     <script src="js/sigma/sigma.min.js" charset="utf-8"></script>
-    <script src="js/sigma/plugins/sigma.parsers.json.min.js" charset="utf-8"></script>
-    <script src="js/sigma/plugins/sigma.plugins.neighborhoods.min.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
 
     <style>
         html, body {
@@ -33,7 +32,7 @@
             letter-spacing: -2px;
         }
 
-        #canvas-container {
+        #plot-container {
             top: 150px;
             bottom: 100px;
             left: 60px;
@@ -50,6 +49,29 @@
             right: 20px;
             position: absolute;
         }
+
+        #svg-container {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        .axis path {
+            display: none;
+        }
+
+        .axis line {
+            shape-rendering: crispEdges;
+            stroke: #000;
+        }
+
+        .axis .minor line {
+            stroke: #777;
+            stroke-dasharray: 2,2;
+        }
+
     </style>
 </head>
 <body>
@@ -58,125 +80,11 @@
     <header>
         <h1 class="title"> Brain activation timeline </h1>
     </header>
-    <div id="canvas-container">
+    <div id="plot-container">
+        <div id="svg-container"></div>
         <div id="sigma-container"></div>
     </div>
 </div>
-
-<script>
-
-;(function(undefined) {
-    'use strict';
-    var that = this;
-    // Conf variables
-    var graph_path = 'data/mld_vgraph.json';
-    var sigma_settings = {
-        labelSize: 'proportional',
-        labelThreshold: 15,
-        defaultLabelSize: 10,
-        scalingMode: 'inside',
-    //    zoomMin: 1/16,
-    //    zoomMax: 4
-        zoomMin: 1,
-        zoomMax: 1
-    };
-    var sigmaInst = null; // sigma instance
-
-    that.exec = function() {
-        // Add methods to sigma before instanciating the global object
-        sigma.classes.graph.addMethod('neighbors', function(nodeId) {
-            var k, neighbors = {}, index = this.allNeighborsIndex[nodeId] || {};
-            for (k in index)
-                neighbors[k] = this.nodesIndex[k];
-
-            return neighbors;
-        });
-
-        // Parse graph and call main function on finish
-        sigma.parsers.json(
-            graph_path,
-            {
-                type: 'canvas',
-                container: 'sigma-container',
-                settings: sigma_settings
-            },
-            function(s) {  // main
-                sigmaInst = s;
-                _postProcessGraph();
-                _bindEvents();
-
-                // d3.selectAll("#top-container").style("background-color", "red");
-            }
-        );
-    };
-
-    function _postProcessGraph() {
-        sigmaInst.graph.nodes().forEach(function(n) {
-            n.originalColor = n.color;
-            if (n.name !== undefined || n.name !== null ) {
-                n.label = n.name;
-            }
-        });
-        sigmaInst.graph.edges().forEach(function(e) {
-            e.originalColor = e.color;
-            e.type = 'curve';
-        });
-    }
-
-    function _bindEvents() {
-        sigmaInst.bind('clickNode', _onClickNode);
-        sigmaInst.bind('clickStage', _onClickStage);
-        sigmaInst.camera.bind('coordinatesUpdated', _onCameraUpdate);
-    }
-
-    function _onClickNode(event) {
-        var nodeId = event.data.node.id;
-        var toKeep = sigmaInst.graph.neighbors(nodeId);
-        toKeep[nodeId] = event.data.node;
-
-        sigmaInst.graph.nodes().forEach(function(n) {
-
-            if (toKeep[n.id]) {
-                console.log('clickNode: ', n);
-                n.color = n.originalColor;
-            }
-            else {
-                n.color = '#eee';
-            }
-        });
-
-        sigmaInst.graph.edges().forEach(function(e) {
-            if (toKeep[e.source] && toKeep[e.target])
-                e.color = e.originalColor;
-            else
-                e.color = '#eee';
-        });
-
-        sigmaInst.refresh();
-    }
-
-    function _onClickStage(event) {
-        sigmaInst.graph.nodes().forEach(function(n) {
-            n.color = n.originalColor;
-        });
-
-        sigmaInst.graph.edges().forEach(function(e) {
-            e.color = e.originalColor;
-        });
-
-        sigmaInst.refresh();
-    }
-
-    function _onCameraUpdate(event) {
-        console.log(event.target);
-    }
-
-    // Run application
-    that.exec();
-
-}).call(this); // end anonymous namespace
-
-</script>
 
 </body>
 </html>
