@@ -48,6 +48,7 @@
 
             _postProcessGraph();
             _createAxis();
+            _createToggles();
             _bindEvents();
 
             return 'success';
@@ -102,9 +103,13 @@
         sigmaInst.graph.nodes().forEach(function(n) {
             // n.type = 'custom';
             n.color = colorMap(Math.abs(n.weight));
+//            n.color = colorMap(n.weight);
             n.originalColor = n.color;
-            if (n.name) {
-                n.label = n.name;
+//            if (n.name) {
+//                n.label = n.name;
+//            }
+            if ( n.pattern_id !== undefined || n.pattern_id !== null ) {
+                n.label = n.pattern_id.toString();
             }
 
             if (!n.size) {
@@ -125,6 +130,11 @@
         // TODO
     }
 
+    function _createToggles() {
+        var toggle = d3.select("#toggles");
+        // TODO
+    }
+
     function _bindEvents() {
         sigmaInst.bind('clickNode', _onClickNode);
         sigmaInst.bind('clickStage', _onClickStage);
@@ -139,7 +149,7 @@
         sigmaInst.graph.nodes().forEach(function(n) {
 
             if (toKeep[n.id]) {
-                // console.log('clickedNode: ', n);
+//                console.log('clickedNode: ', n);
                 n.color = n.originalColor;
             }
             else {
