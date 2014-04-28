@@ -3,8 +3,8 @@
 <head>
     <title>Brain activation timeline</title>
 
-    <script src="js/d3/d3.min.js" charset="utf-8"></script>
-    <script src="js/sigma/sigma.min.js" charset="utf-8"></script>
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <script src="js/sigma.min.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
 
     <style>
@@ -13,6 +13,7 @@
             width: 100%;
             margin: 0 0 0 0;
             font-family: "Helvetica Neue", Helvetica, sans-serif;
+            background-color: #f1f1f1;
         }
 
         h1, h2, h3, h4 {
@@ -20,8 +21,8 @@
         }
 
         #top-container {
-            background-color: #f1f1f1;
-            height: 100%;
+            height: 90%;  /* give room for button */
+            width: 100%;
         }
 
         .title {
@@ -72,6 +73,11 @@
             stroke-dasharray: 2,2;
         }
 
+        #toggles {
+            top: 0px;
+            left: 60px;
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -84,8 +90,7 @@
         <div id="svg-container"></div>
         <div id="sigma-container"></div>
     </div>
-    <div id="toggles"></div>
 </div>
-
+<div id="toggles"></div>
 </body>
 </html>

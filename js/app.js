@@ -1,7 +1,8 @@
-;(function(undefined) {
+
+var Tsviz = function(path2data) {
     'use strict';
     var that = this,
-        graphPath = 'data/mld_vgraph.json',
+        graphPath = path2data || 'data/mld_vgraph.json',
         sigmaParams = {
             type: 'canvas',
             container: 'sigma-container',
@@ -18,11 +19,15 @@
         defaultNodeSize = 1,
         minWeightColor = '#bbb',
         maxWeightColor = '#ff0000',
+        minWeight = 0.0,
+        maxWeight = 0.0,
         disabledNodeColor = '#eee',
         disabledEdgeColor = '#eee',
         drawInactiveNodes = false,
         sigmaInst = null,
-        svgInst = null;
+        svgInst = null,
+        defColorMap = null,
+        componentColorMap = [];
 
     that.exec = function main() {
 
@@ -54,6 +59,44 @@
             return 'success';
         });
     };
+
+    that.toggle = function toggle(t) {
+        if (t === 'default') {
+           _toggleDefaultForNodes();
+        }
+        else if (t === 'components') {
+            _toggleComponents();
+        }
+        else if (t === 'patterns') {
+            _togglePatterns();
+        }
+        sigmaInst.refresh();
+    };
+
+    function _toggleDefaultForNodes() {
+        sigmaInst.graph.nodes().forEach(function(n) {
+            n.color = defColorMap(Math.abs(n.weight));
+            n.originalColor = n.color;
+            if (n.name) {
+                n.label = n.name;
+            }
+        });
+    }
+
+    function _toggleComponents() {
+        sigmaInst.graph.nodes().forEach(function(n) {
+            // Get a color map in order loop if not enough colors
+            var i = n.component_num % componentColorMap.length;
+            n.color = componentColorMap[i](Math.abs(n.weight));
+            n.originalColor = n.color;
+            if (n.name) {
+                n.label = n.name;
+            }
+        });
+    }
+
+    function _togglePatterns() {
+    }
 
     function _bindSigmaMethods() {
         // Add methods to sigma before instanciating the global object
@@ -94,31 +137,44 @@
 
     function _postProcessGraph() {
         // Create color map
-        var colorMap = d3.scale.linear()
-            .domain([d3.min(sigmaInst.graph.nodes(), function(d) { return Math.abs(d.weight); }),
-                     d3.max(sigmaInst.graph.nodes(), function(d) { return Math.abs(d.weight); })])
+        minWeight = d3.min(sigmaInst.graph.nodes(), function(d) { return Math.abs(d.weight); });
+        maxWeight = d3.max(sigmaInst.graph.nodes(), function(d) { return Math.abs(d.weight); });
+
+        // Creat default color map
+        defColorMap = d3.scale.linear()
+            .domain([minWeight, maxWeight])
             .range([minWeightColor, maxWeightColor])
             .clamp(true);
 
-        sigmaInst.graph.nodes().forEach(function(n) {
-            // n.type = 'custom';
-            n.color = colorMap(Math.abs(n.weight));
-//            n.color = colorMap(n.weight);
-            n.originalColor = n.color;
-//            if (n.name) {
-//                n.label = n.name;
-//            }
-            if ( n.pattern_id !== undefined || n.pattern_id !== null ) {
-                n.label = n.pattern_id.toString();
-            }
+        // Create components color maps
+        var p = d3.scale.category10();
+        var col = p.range()
+            .forEach(function(n) {
+                var minCol = d3.rgb(n);
+                minCol = minCol.brighter(1.2);
+                var maxCol = d3.rgb(n);
+                maxCol = maxCol.darker(1.2);
+                var cMap = d3.scale.linear()
+                    .domain([minWeight, maxWeight])
+                    .range([minCol, maxCol])
+                    .clamp(true);
+                componentColorMap.push(cMap);
+            });
 
+        // Set node properties
+        sigmaInst.graph.nodes().forEach(function(n) {
+            n.color = defColorMap(Math.abs(n.weight));
+            n.originalColor = n.color;
+            if (n.name) {
+                n.label = n.name;
+            }
             if (!n.size) {
                 n.size = defaultNodeSize;
             }
         });
 
         sigmaInst.graph.edges().forEach(function(e) {
-            // e.type = 'custom';
+            e.type = 'curve';
             e.originalColor = e.color;
         });
 
@@ -131,8 +187,22 @@
     }
 
     function _createToggles() {
-        var toggle = d3.select("#toggles");
-        // TODO
+        var options = ['default', 'components', 'patterns'];
+        d3.select("#toggles")
+            .append('p').html('Show: ')
+            .append('select')
+                .append('optgroup').attr('label', 'Visualization options')
+                .selectAll('option')
+                .data(options).enter()
+                    .append('option')
+                        .attr('value', function (d) { return d; })
+                        .text(function (d) { return d; })
+            ;
+
+        // Bind on change method to public function toggle
+        d3.select('select').on('change', function() {
+            that.toggle(this.value);
+        });
     }
 
     function _bindEvents() {
@@ -143,13 +213,12 @@
 
     function _onClickNode(event) {
         var nodeId = event.data.node.id;
+        console.log(sigmaInst.graph.nodes()[nodeId]);
         var toKeep = sigmaInst.graph.forwardDiffusion(nodeId);
         toKeep[nodeId] = event.data.node;
 
         sigmaInst.graph.nodes().forEach(function(n) {
-
             if (toKeep[n.id]) {
-//                console.log('clickedNode: ', n);
                 n.color = n.originalColor;
             }
             else {
@@ -191,7 +260,8 @@
         // console.log(event.target);
     }
 
-    // Run application
-    that.exec();
+};
 
-}).call(this); // end anonymous namespace
+// Main
+var tsvizInst = new Tsviz();
+tsvizInst.exec();
