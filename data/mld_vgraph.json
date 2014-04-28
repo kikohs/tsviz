@@ -1,0 +1,4829 @@
+{
+    "component_count" : 43,
+    "edge_count" : 345,
+    "edges" : [
+        {
+            "id" : "0",
+            "source" : "0",
+            "target" : "1"
+        },
+        {
+            "id" : "1",
+            "source" : "2",
+            "target" : "3"
+        },
+        {
+            "id" : "2",
+            "source" : "3",
+            "target" : "4"
+        },
+        {
+            "id" : "3",
+            "source" : "5",
+            "target" : "6"
+        },
+        {
+            "id" : "4",
+            "source" : "7",
+            "target" : "8"
+        },
+        {
+            "id" : "5",
+            "source" : "5",
+            "target" : "8"
+        },
+        {
+            "id" : "6",
+            "source" : "7",
+            "target" : "6"
+        },
+        {
+            "id" : "7",
+            "source" : "4",
+            "target" : "9"
+        },
+        {
+            "id" : "8",
+            "source" : "10",
+            "target" : "11"
+        },
+        {
+            "id" : "9",
+            "source" : "10",
+            "target" : "12"
+        },
+        {
+            "id" : "10",
+            "source" : "13",
+            "target" : "12"
+        },
+        {
+            "id" : "11",
+            "source" : "10",
+            "target" : "14"
+        },
+        {
+            "id" : "12",
+            "source" : "12",
+            "target" : "15"
+        },
+        {
+            "id" : "13",
+            "source" : "16",
+            "target" : "17"
+        },
+        {
+            "id" : "14",
+            "source" : "11",
+            "target" : "17"
+        },
+        {
+            "id" : "15",
+            "source" : "11",
+            "target" : "15"
+        },
+        {
+            "id" : "16",
+            "source" : "11",
+            "target" : "18"
+        },
+        {
+            "id" : "17",
+            "source" : "12",
+            "target" : "17"
+        },
+        {
+            "id" : "18",
+            "source" : "12",
+            "target" : "18"
+        },
+        {
+            "id" : "19",
+            "source" : "14",
+            "target" : "18"
+        },
+        {
+            "id" : "20",
+            "source" : "18",
+            "target" : "19"
+        },
+        {
+            "id" : "21",
+            "source" : "17",
+            "target" : "19"
+        },
+        {
+            "id" : "22",
+            "source" : "15",
+            "target" : "19"
+        },
+        {
+            "id" : "23",
+            "source" : "20",
+            "target" : "21"
+        },
+        {
+            "id" : "24",
+            "source" : "22",
+            "target" : "23"
+        },
+        {
+            "id" : "25",
+            "source" : "20",
+            "target" : "24"
+        },
+        {
+            "id" : "26",
+            "source" : "20",
+            "target" : "23"
+        },
+        {
+            "id" : "27",
+            "source" : "22",
+            "target" : "21"
+        },
+        {
+            "id" : "28",
+            "source" : "25",
+            "target" : "21"
+        },
+        {
+            "id" : "29",
+            "source" : "22",
+            "target" : "24"
+        },
+        {
+            "id" : "30",
+            "source" : "25",
+            "target" : "24"
+        },
+        {
+            "id" : "31",
+            "source" : "26",
+            "target" : "24"
+        },
+        {
+            "id" : "32",
+            "source" : "22",
+            "target" : "27"
+        },
+        {
+            "id" : "33",
+            "source" : "25",
+            "target" : "27"
+        },
+        {
+            "id" : "34",
+            "source" : "26",
+            "target" : "27"
+        },
+        {
+            "id" : "35",
+            "source" : "25",
+            "target" : "23"
+        },
+        {
+            "id" : "36",
+            "source" : "26",
+            "target" : "23"
+        },
+        {
+            "id" : "37",
+            "source" : "28",
+            "target" : "23"
+        },
+        {
+            "id" : "38",
+            "source" : "21",
+            "target" : "29"
+        },
+        {
+            "id" : "39",
+            "source" : "24",
+            "target" : "30"
+        },
+        {
+            "id" : "40",
+            "source" : "23",
+            "target" : "31"
+        },
+        {
+            "id" : "41",
+            "source" : "21",
+            "target" : "30"
+        },
+        {
+            "id" : "42",
+            "source" : "24",
+            "target" : "29"
+        },
+        {
+            "id" : "43",
+            "source" : "21",
+            "target" : "31"
+        },
+        {
+            "id" : "44",
+            "source" : "23",
+            "target" : "29"
+        },
+        {
+            "id" : "45",
+            "source" : "21",
+            "target" : "32"
+        },
+        {
+            "id" : "46",
+            "source" : "27",
+            "target" : "30"
+        },
+        {
+            "id" : "47",
+            "source" : "24",
+            "target" : "31"
+        },
+        {
+            "id" : "48",
+            "source" : "23",
+            "target" : "30"
+        },
+        {
+            "id" : "49",
+            "source" : "24",
+            "target" : "32"
+        },
+        {
+            "id" : "50",
+            "source" : "27",
+            "target" : "31"
+        },
+        {
+            "id" : "51",
+            "source" : "27",
+            "target" : "32"
+        },
+        {
+            "id" : "52",
+            "source" : "23",
+            "target" : "32"
+        },
+        {
+            "id" : "53",
+            "source" : "33",
+            "target" : "34"
+        },
+        {
+            "id" : "54",
+            "source" : "34",
+            "target" : "35"
+        },
+        {
+            "id" : "55",
+            "source" : "34",
+            "target" : "36"
+        },
+        {
+            "id" : "56",
+            "source" : "34",
+            "target" : "37"
+        },
+        {
+            "id" : "57",
+            "source" : "35",
+            "target" : "38"
+        },
+        {
+            "id" : "58",
+            "source" : "37",
+            "target" : "39"
+        },
+        {
+            "id" : "59",
+            "source" : "36",
+            "target" : "38"
+        },
+        {
+            "id" : "60",
+            "source" : "36",
+            "target" : "39"
+        },
+        {
+            "id" : "61",
+            "source" : "35",
+            "target" : "39"
+        },
+        {
+            "id" : "62",
+            "source" : "37",
+            "target" : "38"
+        },
+        {
+            "id" : "63",
+            "source" : "38",
+            "target" : "40"
+        },
+        {
+            "id" : "64",
+            "source" : "39",
+            "target" : "41"
+        },
+        {
+            "id" : "65",
+            "source" : "38",
+            "target" : "42"
+        },
+        {
+            "id" : "66",
+            "source" : "39",
+            "target" : "42"
+        },
+        {
+            "id" : "67",
+            "source" : "38",
+            "target" : "41"
+        },
+        {
+            "id" : "68",
+            "source" : "39",
+            "target" : "40"
+        },
+        {
+            "id" : "69",
+            "source" : "38",
+            "target" : "43"
+        },
+        {
+            "id" : "70",
+            "source" : "39",
+            "target" : "43"
+        },
+        {
+            "id" : "71",
+            "source" : "39",
+            "target" : "44"
+        },
+        {
+            "id" : "72",
+            "source" : "39",
+            "target" : "45"
+        },
+        {
+            "id" : "73",
+            "source" : "46",
+            "target" : "44"
+        },
+        {
+            "id" : "74",
+            "source" : "46",
+            "target" : "45"
+        },
+        {
+            "id" : "75",
+            "source" : "46",
+            "target" : "47"
+        },
+        {
+            "id" : "76",
+            "source" : "45",
+            "target" : "48"
+        },
+        {
+            "id" : "77",
+            "source" : "41",
+            "target" : "48"
+        },
+        {
+            "id" : "78",
+            "source" : "43",
+            "target" : "48"
+        },
+        {
+            "id" : "79",
+            "source" : "44",
+            "target" : "48"
+        },
+        {
+            "id" : "80",
+            "source" : "47",
+            "target" : "48"
+        },
+        {
+            "id" : "81",
+            "source" : "49",
+            "target" : "48"
+        },
+        {
+            "id" : "82",
+            "source" : "48",
+            "target" : "50"
+        },
+        {
+            "id" : "83",
+            "source" : "51",
+            "target" : "52"
+        },
+        {
+            "id" : "84",
+            "source" : "53",
+            "target" : "52"
+        },
+        {
+            "id" : "85",
+            "source" : "50",
+            "target" : "52"
+        },
+        {
+            "id" : "86",
+            "source" : "54",
+            "target" : "55"
+        },
+        {
+            "id" : "87",
+            "source" : "56",
+            "target" : "57"
+        },
+        {
+            "id" : "88",
+            "source" : "54",
+            "target" : "58"
+        },
+        {
+            "id" : "89",
+            "source" : "56",
+            "target" : "58"
+        },
+        {
+            "id" : "90",
+            "source" : "54",
+            "target" : "57"
+        },
+        {
+            "id" : "91",
+            "source" : "56",
+            "target" : "55"
+        },
+        {
+            "id" : "92",
+            "source" : "58",
+            "target" : "59"
+        },
+        {
+            "id" : "93",
+            "source" : "55",
+            "target" : "59"
+        },
+        {
+            "id" : "94",
+            "source" : "57",
+            "target" : "59"
+        },
+        {
+            "id" : "95",
+            "source" : "59",
+            "target" : "60"
+        },
+        {
+            "id" : "96",
+            "source" : "60",
+            "target" : "61"
+        },
+        {
+            "id" : "97",
+            "source" : "60",
+            "target" : "62"
+        },
+        {
+            "id" : "98",
+            "source" : "60",
+            "target" : "63"
+        },
+        {
+            "id" : "99",
+            "source" : "60",
+            "target" : "64"
+        },
+        {
+            "id" : "100",
+            "source" : "65",
+            "target" : "66"
+        },
+        {
+            "id" : "101",
+            "source" : "67",
+            "target" : "68"
+        },
+        {
+            "id" : "102",
+            "source" : "62",
+            "target" : "69"
+        },
+        {
+            "id" : "103",
+            "source" : "61",
+            "target" : "70"
+        },
+        {
+            "id" : "104",
+            "source" : "65",
+            "target" : "68"
+        },
+        {
+            "id" : "105",
+            "source" : "67",
+            "target" : "66"
+        },
+        {
+            "id" : "106",
+            "source" : "65",
+            "target" : "69"
+        },
+        {
+            "id" : "107",
+            "source" : "62",
+            "target" : "66"
+        },
+        {
+            "id" : "108",
+            "source" : "67",
+            "target" : "69"
+        },
+        {
+            "id" : "109",
+            "source" : "62",
+            "target" : "68"
+        },
+        {
+            "id" : "110",
+            "source" : "63",
+            "target" : "69"
+        },
+        {
+            "id" : "111",
+            "source" : "62",
+            "target" : "71"
+        },
+        {
+            "id" : "112",
+            "source" : "62",
+            "target" : "70"
+        },
+        {
+            "id" : "113",
+            "source" : "61",
+            "target" : "69"
+        },
+        {
+            "id" : "114",
+            "source" : "63",
+            "target" : "71"
+        },
+        {
+            "id" : "115",
+            "source" : "63",
+            "target" : "70"
+        },
+        {
+            "id" : "116",
+            "source" : "61",
+            "target" : "71"
+        },
+        {
+            "id" : "117",
+            "source" : "64",
+            "target" : "71"
+        },
+        {
+            "id" : "118",
+            "source" : "61",
+            "target" : "72"
+        },
+        {
+            "id" : "119",
+            "source" : "64",
+            "target" : "72"
+        },
+        {
+            "id" : "120",
+            "source" : "64",
+            "target" : "70"
+        },
+        {
+            "id" : "121",
+            "source" : "66",
+            "target" : "73"
+        },
+        {
+            "id" : "122",
+            "source" : "68",
+            "target" : "74"
+        },
+        {
+            "id" : "123",
+            "source" : "69",
+            "target" : "75"
+        },
+        {
+            "id" : "124",
+            "source" : "72",
+            "target" : "76"
+        },
+        {
+            "id" : "125",
+            "source" : "66",
+            "target" : "74"
+        },
+        {
+            "id" : "126",
+            "source" : "68",
+            "target" : "73"
+        },
+        {
+            "id" : "127",
+            "source" : "66",
+            "target" : "75"
+        },
+        {
+            "id" : "128",
+            "source" : "69",
+            "target" : "73"
+        },
+        {
+            "id" : "129",
+            "source" : "68",
+            "target" : "77"
+        },
+        {
+            "id" : "130",
+            "source" : "68",
+            "target" : "75"
+        },
+        {
+            "id" : "131",
+            "source" : "69",
+            "target" : "74"
+        },
+        {
+            "id" : "132",
+            "source" : "69",
+            "target" : "77"
+        },
+        {
+            "id" : "133",
+            "source" : "71",
+            "target" : "75"
+        },
+        {
+            "id" : "134",
+            "source" : "70",
+            "target" : "75"
+        },
+        {
+            "id" : "135",
+            "source" : "71",
+            "target" : "76"
+        },
+        {
+            "id" : "136",
+            "source" : "70",
+            "target" : "76"
+        },
+        {
+            "id" : "137",
+            "source" : "75",
+            "target" : "78"
+        },
+        {
+            "id" : "138",
+            "source" : "73",
+            "target" : "78"
+        },
+        {
+            "id" : "139",
+            "source" : "74",
+            "target" : "78"
+        },
+        {
+            "id" : "140",
+            "source" : "77",
+            "target" : "78"
+        },
+        {
+            "id" : "141",
+            "source" : "79",
+            "target" : "80"
+        },
+        {
+            "id" : "142",
+            "source" : "80",
+            "target" : "81"
+        },
+        {
+            "id" : "143",
+            "source" : "82",
+            "target" : "83"
+        },
+        {
+            "id" : "144",
+            "source" : "82",
+            "target" : "84"
+        },
+        {
+            "id" : "145",
+            "source" : "82",
+            "target" : "85"
+        },
+        {
+            "id" : "146",
+            "source" : "83",
+            "target" : "86"
+        },
+        {
+            "id" : "147",
+            "source" : "87",
+            "target" : "88"
+        },
+        {
+            "id" : "148",
+            "source" : "89",
+            "target" : "90"
+        },
+        {
+            "id" : "149",
+            "source" : "87",
+            "target" : "91"
+        },
+        {
+            "id" : "150",
+            "source" : "87",
+            "target" : "90"
+        },
+        {
+            "id" : "151",
+            "source" : "89",
+            "target" : "88"
+        },
+        {
+            "id" : "152",
+            "source" : "92",
+            "target" : "93"
+        },
+        {
+            "id" : "153",
+            "source" : "94",
+            "target" : "95"
+        },
+        {
+            "id" : "154",
+            "source" : "92",
+            "target" : "96"
+        },
+        {
+            "id" : "155",
+            "source" : "92",
+            "target" : "95"
+        },
+        {
+            "id" : "156",
+            "source" : "94",
+            "target" : "93"
+        },
+        {
+            "id" : "157",
+            "source" : "94",
+            "target" : "96"
+        },
+        {
+            "id" : "158",
+            "source" : "94",
+            "target" : "97"
+        },
+        {
+            "id" : "159",
+            "source" : "96",
+            "target" : "98"
+        },
+        {
+            "id" : "160",
+            "source" : "97",
+            "target" : "99"
+        },
+        {
+            "id" : "161",
+            "source" : "93",
+            "target" : "98"
+        },
+        {
+            "id" : "162",
+            "source" : "95",
+            "target" : "98"
+        },
+        {
+            "id" : "163",
+            "source" : "95",
+            "target" : "99"
+        },
+        {
+            "id" : "164",
+            "source" : "100",
+            "target" : "99"
+        },
+        {
+            "id" : "165",
+            "source" : "100",
+            "target" : "101"
+        },
+        {
+            "id" : "166",
+            "source" : "97",
+            "target" : "101"
+        },
+        {
+            "id" : "167",
+            "source" : "97",
+            "target" : "102"
+        },
+        {
+            "id" : "168",
+            "source" : "103",
+            "target" : "104"
+        },
+        {
+            "id" : "169",
+            "source" : "105",
+            "target" : "106"
+        },
+        {
+            "id" : "170",
+            "source" : "107",
+            "target" : "108"
+        },
+        {
+            "id" : "171",
+            "source" : "109",
+            "target" : "110"
+        },
+        {
+            "id" : "172",
+            "source" : "105",
+            "target" : "108"
+        },
+        {
+            "id" : "173",
+            "source" : "107",
+            "target" : "106"
+        },
+        {
+            "id" : "174",
+            "source" : "107",
+            "target" : "111"
+        },
+        {
+            "id" : "175",
+            "source" : "107",
+            "target" : "110"
+        },
+        {
+            "id" : "176",
+            "source" : "109",
+            "target" : "108"
+        },
+        {
+            "id" : "177",
+            "source" : "109",
+            "target" : "111"
+        },
+        {
+            "id" : "178",
+            "source" : "106",
+            "target" : "112"
+        },
+        {
+            "id" : "179",
+            "source" : "108",
+            "target" : "113"
+        },
+        {
+            "id" : "180",
+            "source" : "111",
+            "target" : "114"
+        },
+        {
+            "id" : "181",
+            "source" : "110",
+            "target" : "115"
+        },
+        {
+            "id" : "182",
+            "source" : "106",
+            "target" : "113"
+        },
+        {
+            "id" : "183",
+            "source" : "108",
+            "target" : "112"
+        },
+        {
+            "id" : "184",
+            "source" : "108",
+            "target" : "114"
+        },
+        {
+            "id" : "185",
+            "source" : "111",
+            "target" : "113"
+        },
+        {
+            "id" : "186",
+            "source" : "108",
+            "target" : "115"
+        },
+        {
+            "id" : "187",
+            "source" : "110",
+            "target" : "113"
+        },
+        {
+            "id" : "188",
+            "source" : "111",
+            "target" : "115"
+        },
+        {
+            "id" : "189",
+            "source" : "110",
+            "target" : "114"
+        },
+        {
+            "id" : "190",
+            "source" : "112",
+            "target" : "116"
+        },
+        {
+            "id" : "191",
+            "source" : "114",
+            "target" : "117"
+        },
+        {
+            "id" : "192",
+            "source" : "115",
+            "target" : "118"
+        },
+        {
+            "id" : "193",
+            "source" : "113",
+            "target" : "116"
+        },
+        {
+            "id" : "194",
+            "source" : "113",
+            "target" : "117"
+        },
+        {
+            "id" : "195",
+            "source" : "113",
+            "target" : "118"
+        },
+        {
+            "id" : "196",
+            "source" : "114",
+            "target" : "118"
+        },
+        {
+            "id" : "197",
+            "source" : "115",
+            "target" : "117"
+        },
+        {
+            "id" : "198",
+            "source" : "115",
+            "target" : "119"
+        },
+        {
+            "id" : "199",
+            "source" : "117",
+            "target" : "120"
+        },
+        {
+            "id" : "200",
+            "source" : "118",
+            "target" : "121"
+        },
+        {
+            "id" : "201",
+            "source" : "119",
+            "target" : "122"
+        },
+        {
+            "id" : "202",
+            "source" : "117",
+            "target" : "121"
+        },
+        {
+            "id" : "203",
+            "source" : "118",
+            "target" : "120"
+        },
+        {
+            "id" : "204",
+            "source" : "117",
+            "target" : "123"
+        },
+        {
+            "id" : "205",
+            "source" : "118",
+            "target" : "123"
+        },
+        {
+            "id" : "206",
+            "source" : "118",
+            "target" : "122"
+        },
+        {
+            "id" : "207",
+            "source" : "119",
+            "target" : "121"
+        },
+        {
+            "id" : "208",
+            "source" : "119",
+            "target" : "123"
+        },
+        {
+            "id" : "209",
+            "source" : "124",
+            "target" : "122"
+        },
+        {
+            "id" : "210",
+            "source" : "121",
+            "target" : "125"
+        },
+        {
+            "id" : "211",
+            "source" : "120",
+            "target" : "125"
+        },
+        {
+            "id" : "212",
+            "source" : "123",
+            "target" : "125"
+        },
+        {
+            "id" : "213",
+            "source" : "122",
+            "target" : "125"
+        },
+        {
+            "id" : "214",
+            "source" : "125",
+            "target" : "126"
+        },
+        {
+            "id" : "215",
+            "source" : "127",
+            "target" : "128"
+        },
+        {
+            "id" : "216",
+            "source" : "129",
+            "target" : "130"
+        },
+        {
+            "id" : "217",
+            "source" : "130",
+            "target" : "131"
+        },
+        {
+            "id" : "218",
+            "source" : "132",
+            "target" : "133"
+        },
+        {
+            "id" : "219",
+            "source" : "132",
+            "target" : "134"
+        },
+        {
+            "id" : "220",
+            "source" : "135",
+            "target" : "136"
+        },
+        {
+            "id" : "221",
+            "source" : "136",
+            "target" : "137"
+        },
+        {
+            "id" : "222",
+            "source" : "138",
+            "target" : "139"
+        },
+        {
+            "id" : "223",
+            "source" : "139",
+            "target" : "140"
+        },
+        {
+            "id" : "224",
+            "source" : "141",
+            "target" : "142"
+        },
+        {
+            "id" : "225",
+            "source" : "143",
+            "target" : "142"
+        },
+        {
+            "id" : "226",
+            "source" : "144",
+            "target" : "145"
+        },
+        {
+            "id" : "227",
+            "source" : "146",
+            "target" : "147"
+        },
+        {
+            "id" : "228",
+            "source" : "148",
+            "target" : "149"
+        },
+        {
+            "id" : "229",
+            "source" : "148",
+            "target" : "150"
+        },
+        {
+            "id" : "230",
+            "source" : "148",
+            "target" : "151"
+        },
+        {
+            "id" : "231",
+            "source" : "148",
+            "target" : "152"
+        },
+        {
+            "id" : "232",
+            "source" : "150",
+            "target" : "153"
+        },
+        {
+            "id" : "233",
+            "source" : "149",
+            "target" : "154"
+        },
+        {
+            "id" : "234",
+            "source" : "155",
+            "target" : "156"
+        },
+        {
+            "id" : "235",
+            "source" : "150",
+            "target" : "154"
+        },
+        {
+            "id" : "236",
+            "source" : "149",
+            "target" : "153"
+        },
+        {
+            "id" : "237",
+            "source" : "150",
+            "target" : "157"
+        },
+        {
+            "id" : "238",
+            "source" : "151",
+            "target" : "154"
+        },
+        {
+            "id" : "239",
+            "source" : "149",
+            "target" : "157"
+        },
+        {
+            "id" : "240",
+            "source" : "152",
+            "target" : "154"
+        },
+        {
+            "id" : "241",
+            "source" : "155",
+            "target" : "157"
+        },
+        {
+            "id" : "242",
+            "source" : "153",
+            "target" : "158"
+        },
+        {
+            "id" : "243",
+            "source" : "154",
+            "target" : "159"
+        },
+        {
+            "id" : "244",
+            "source" : "153",
+            "target" : "159"
+        },
+        {
+            "id" : "245",
+            "source" : "154",
+            "target" : "158"
+        },
+        {
+            "id" : "246",
+            "source" : "157",
+            "target" : "158"
+        },
+        {
+            "id" : "247",
+            "source" : "157",
+            "target" : "159"
+        },
+        {
+            "id" : "248",
+            "source" : "159",
+            "target" : "160"
+        },
+        {
+            "id" : "249",
+            "source" : "158",
+            "target" : "160"
+        },
+        {
+            "id" : "250",
+            "source" : "160",
+            "target" : "161"
+        },
+        {
+            "id" : "251",
+            "source" : "160",
+            "target" : "162"
+        },
+        {
+            "id" : "252",
+            "source" : "160",
+            "target" : "163"
+        },
+        {
+            "id" : "253",
+            "source" : "161",
+            "target" : "164"
+        },
+        {
+            "id" : "254",
+            "source" : "163",
+            "target" : "165"
+        },
+        {
+            "id" : "255",
+            "source" : "161",
+            "target" : "166"
+        },
+        {
+            "id" : "256",
+            "source" : "162",
+            "target" : "164"
+        },
+        {
+            "id" : "257",
+            "source" : "162",
+            "target" : "165"
+        },
+        {
+            "id" : "258",
+            "source" : "161",
+            "target" : "167"
+        },
+        {
+            "id" : "259",
+            "source" : "161",
+            "target" : "165"
+        },
+        {
+            "id" : "260",
+            "source" : "163",
+            "target" : "164"
+        },
+        {
+            "id" : "261",
+            "source" : "166",
+            "target" : "168"
+        },
+        {
+            "id" : "262",
+            "source" : "165",
+            "target" : "169"
+        },
+        {
+            "id" : "263",
+            "source" : "164",
+            "target" : "168"
+        },
+        {
+            "id" : "264",
+            "source" : "164",
+            "target" : "170"
+        },
+        {
+            "id" : "265",
+            "source" : "165",
+            "target" : "170"
+        },
+        {
+            "id" : "266",
+            "source" : "164",
+            "target" : "171"
+        },
+        {
+            "id" : "267",
+            "source" : "165",
+            "target" : "171"
+        },
+        {
+            "id" : "268",
+            "source" : "164",
+            "target" : "169"
+        },
+        {
+            "id" : "269",
+            "source" : "168",
+            "target" : "172"
+        },
+        {
+            "id" : "270",
+            "source" : "170",
+            "target" : "173"
+        },
+        {
+            "id" : "271",
+            "source" : "171",
+            "target" : "174"
+        },
+        {
+            "id" : "272",
+            "source" : "168",
+            "target" : "175"
+        },
+        {
+            "id" : "273",
+            "source" : "169",
+            "target" : "173"
+        },
+        {
+            "id" : "274",
+            "source" : "170",
+            "target" : "174"
+        },
+        {
+            "id" : "275",
+            "source" : "171",
+            "target" : "173"
+        },
+        {
+            "id" : "276",
+            "source" : "169",
+            "target" : "174"
+        },
+        {
+            "id" : "277",
+            "source" : "174",
+            "target" : "176"
+        },
+        {
+            "id" : "278",
+            "source" : "175",
+            "target" : "177"
+        },
+        {
+            "id" : "279",
+            "source" : "172",
+            "target" : "177"
+        },
+        {
+            "id" : "280",
+            "source" : "173",
+            "target" : "178"
+        },
+        {
+            "id" : "281",
+            "source" : "173",
+            "target" : "179"
+        },
+        {
+            "id" : "282",
+            "source" : "173",
+            "target" : "176"
+        },
+        {
+            "id" : "283",
+            "source" : "174",
+            "target" : "178"
+        },
+        {
+            "id" : "284",
+            "source" : "174",
+            "target" : "179"
+        },
+        {
+            "id" : "285",
+            "source" : "175",
+            "target" : "180"
+        },
+        {
+            "id" : "286",
+            "source" : "180",
+            "target" : "181"
+        },
+        {
+            "id" : "287",
+            "source" : "179",
+            "target" : "182"
+        },
+        {
+            "id" : "288",
+            "source" : "176",
+            "target" : "182"
+        },
+        {
+            "id" : "289",
+            "source" : "176",
+            "target" : "183"
+        },
+        {
+            "id" : "290",
+            "source" : "184",
+            "target" : "182"
+        },
+        {
+            "id" : "291",
+            "source" : "177",
+            "target" : "181"
+        },
+        {
+            "id" : "292",
+            "source" : "180",
+            "target" : "185"
+        },
+        {
+            "id" : "293",
+            "source" : "177",
+            "target" : "185"
+        },
+        {
+            "id" : "294",
+            "source" : "178",
+            "target" : "182"
+        },
+        {
+            "id" : "295",
+            "source" : "178",
+            "target" : "183"
+        },
+        {
+            "id" : "296",
+            "source" : "179",
+            "target" : "183"
+        },
+        {
+            "id" : "297",
+            "source" : "182",
+            "target" : "186"
+        },
+        {
+            "id" : "298",
+            "source" : "182",
+            "target" : "187"
+        },
+        {
+            "id" : "299",
+            "source" : "183",
+            "target" : "187"
+        },
+        {
+            "id" : "300",
+            "source" : "188",
+            "target" : "189"
+        },
+        {
+            "id" : "301",
+            "source" : "190",
+            "target" : "191"
+        },
+        {
+            "id" : "302",
+            "source" : "186",
+            "target" : "192"
+        },
+        {
+            "id" : "303",
+            "source" : "187",
+            "target" : "193"
+        },
+        {
+            "id" : "304",
+            "source" : "188",
+            "target" : "194"
+        },
+        {
+            "id" : "305",
+            "source" : "188",
+            "target" : "192"
+        },
+        {
+            "id" : "306",
+            "source" : "186",
+            "target" : "189"
+        },
+        {
+            "id" : "307",
+            "source" : "190",
+            "target" : "194"
+        },
+        {
+            "id" : "308",
+            "source" : "186",
+            "target" : "194"
+        },
+        {
+            "id" : "309",
+            "source" : "190",
+            "target" : "192"
+        },
+        {
+            "id" : "310",
+            "source" : "186",
+            "target" : "191"
+        },
+        {
+            "id" : "311",
+            "source" : "186",
+            "target" : "193"
+        },
+        {
+            "id" : "312",
+            "source" : "187",
+            "target" : "192"
+        },
+        {
+            "id" : "313",
+            "source" : "189",
+            "target" : "195"
+        },
+        {
+            "id" : "314",
+            "source" : "192",
+            "target" : "196"
+        },
+        {
+            "id" : "315",
+            "source" : "193",
+            "target" : "197"
+        },
+        {
+            "id" : "316",
+            "source" : "198",
+            "target" : "199"
+        },
+        {
+            "id" : "317",
+            "source" : "194",
+            "target" : "195"
+        },
+        {
+            "id" : "318",
+            "source" : "189",
+            "target" : "196"
+        },
+        {
+            "id" : "319",
+            "source" : "192",
+            "target" : "195"
+        },
+        {
+            "id" : "320",
+            "source" : "189",
+            "target" : "200"
+        },
+        {
+            "id" : "321",
+            "source" : "194",
+            "target" : "196"
+        },
+        {
+            "id" : "322",
+            "source" : "194",
+            "target" : "200"
+        },
+        {
+            "id" : "323",
+            "source" : "191",
+            "target" : "196"
+        },
+        {
+            "id" : "324",
+            "source" : "191",
+            "target" : "200"
+        },
+        {
+            "id" : "325",
+            "source" : "192",
+            "target" : "200"
+        },
+        {
+            "id" : "326",
+            "source" : "192",
+            "target" : "197"
+        },
+        {
+            "id" : "327",
+            "source" : "193",
+            "target" : "196"
+        },
+        {
+            "id" : "328",
+            "source" : "193",
+            "target" : "200"
+        },
+        {
+            "id" : "329",
+            "source" : "193",
+            "target" : "201"
+        },
+        {
+            "id" : "330",
+            "source" : "202",
+            "target" : "199"
+        },
+        {
+            "id" : "331",
+            "source" : "202",
+            "target" : "203"
+        },
+        {
+            "id" : "332",
+            "source" : "198",
+            "target" : "203"
+        },
+        {
+            "id" : "333",
+            "source" : "204",
+            "target" : "205"
+        },
+        {
+            "id" : "334",
+            "source" : "206",
+            "target" : "207"
+        },
+        {
+            "id" : "335",
+            "source" : "208",
+            "target" : "207"
+        },
+        {
+            "id" : "336",
+            "source" : "209",
+            "target" : "207"
+        },
+        {
+            "id" : "337",
+            "source" : "207",
+            "target" : "210"
+        },
+        {
+            "id" : "338",
+            "source" : "211",
+            "target" : "212"
+        },
+        {
+            "id" : "339",
+            "source" : "211",
+            "target" : "213"
+        },
+        {
+            "id" : "340",
+            "source" : "214",
+            "target" : "215"
+        },
+        {
+            "id" : "341",
+            "source" : "215",
+            "target" : "216"
+        },
+        {
+            "id" : "342",
+            "source" : "216",
+            "target" : "217"
+        },
+        {
+            "id" : "343",
+            "source" : "216",
+            "target" : "218"
+        },
+        {
+            "id" : "344",
+            "source" : "219",
+            "target" : "220"
+        }
+    ],
+    "layer_count" : 94,
+    "node_count" : 221,
+    "nodes" : [
+        {
+            "brain side" : "left",
+            "component_id" : 0,
+            "component_num" : 0,
+            "id" : "0",
+            "input_id" : "47",
+            "label" : "0",
+            "layer_pos" : 0,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 0,
+            "weight" : -9.4620247,
+            "x" : 0,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 0,
+            "component_num" : 0,
+            "id" : "1",
+            "input_id" : "47",
+            "label" : "1",
+            "layer_pos" : 1,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 1,
+            "weight" : -13.927162,
+            "x" : 3,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 2,
+            "component_num" : 2,
+            "id" : "2",
+            "input_id" : "1",
+            "label" : "2",
+            "layer_pos" : 2,
+            "name" : "parsorbitalis",
+            "slice_pos" : 2,
+            "weight" : 12.097743,
+            "x" : 6,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 2,
+            "component_num" : 2,
+            "id" : "3",
+            "input_id" : "4",
+            "label" : "3",
+            "layer_pos" : 3,
+            "name" : "parstriangularis",
+            "slice_pos" : 3,
+            "weight" : 8.772337,
+            "x" : 9,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 2,
+            "component_num" : 2,
+            "id" : "4",
+            "input_id" : "4",
+            "label" : "4",
+            "layer_pos" : 4,
+            "name" : "parstriangularis",
+            "slice_pos" : 4,
+            "weight" : 9.1743603,
+            "x" : 12,
+            "y" : 4
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 5,
+            "component_num" : 3,
+            "id" : "5",
+            "input_id" : "52",
+            "label" : "5",
+            "layer_pos" : 3,
+            "name" : "rostralanteriorcingulate",
+            "slice_pos" : 3,
+            "weight" : 9.3298302,
+            "x" : 9,
+            "y" : 52
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 5,
+            "component_num" : 3,
+            "id" : "6",
+            "input_id" : "52",
+            "label" : "6",
+            "layer_pos" : 4,
+            "name" : "rostralanteriorcingulate",
+            "slice_pos" : 4,
+            "weight" : 11.029305,
+            "x" : 12,
+            "y" : 52
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 5,
+            "component_num" : 3,
+            "id" : "7",
+            "input_id" : "53",
+            "label" : "7",
+            "layer_pos" : 3,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 3,
+            "weight" : 8.7192135,
+            "x" : 9,
+            "y" : 53
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 5,
+            "component_num" : 3,
+            "id" : "8",
+            "input_id" : "53",
+            "label" : "8",
+            "layer_pos" : 4,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 4,
+            "weight" : 11.882255,
+            "x" : 12,
+            "y" : 53
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 2,
+            "component_num" : 2,
+            "id" : "9",
+            "input_id" : "4",
+            "label" : "9",
+            "layer_pos" : 5,
+            "name" : "parstriangularis",
+            "slice_pos" : 5,
+            "weight" : 10.207172,
+            "x" : 15,
+            "y" : 4
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "10",
+            "input_id" : "48",
+            "label" : "10",
+            "layer_pos" : 6,
+            "name" : "superiorfrontal",
+            "slice_pos" : 6,
+            "weight" : -10.571769,
+            "x" : 18,
+            "y" : 48
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "11",
+            "input_id" : "6",
+            "label" : "11",
+            "layer_pos" : 7,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 7,
+            "weight" : -8.9300222,
+            "x" : 21,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "12",
+            "input_id" : "47",
+            "label" : "12",
+            "layer_pos" : 7,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 7,
+            "weight" : -11.156912,
+            "x" : 21,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "13",
+            "input_id" : "49",
+            "label" : "13",
+            "layer_pos" : 6,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 6,
+            "weight" : -10.95418,
+            "x" : 18,
+            "y" : 49
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "14",
+            "input_id" : "52",
+            "label" : "14",
+            "layer_pos" : 7,
+            "name" : "rostralanteriorcingulate",
+            "slice_pos" : 7,
+            "weight" : -11.592597,
+            "x" : 21,
+            "y" : 52
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "15",
+            "input_id" : "47",
+            "label" : "15",
+            "layer_pos" : 8,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 8,
+            "weight" : -10.541433,
+            "x" : 24,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "16",
+            "input_id" : "1",
+            "label" : "16",
+            "layer_pos" : 7,
+            "name" : "parsorbitalis",
+            "slice_pos" : 7,
+            "weight" : -10.164555,
+            "x" : 21,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "17",
+            "input_id" : "7",
+            "label" : "17",
+            "layer_pos" : 8,
+            "name" : "superiorfrontal",
+            "slice_pos" : 8,
+            "weight" : -8.7920685,
+            "x" : 24,
+            "y" : 7
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "18",
+            "input_id" : "48",
+            "label" : "18",
+            "layer_pos" : 8,
+            "name" : "superiorfrontal",
+            "slice_pos" : 8,
+            "weight" : -12.92666,
+            "x" : 24,
+            "y" : 48
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 10,
+            "component_num" : 4,
+            "id" : "19",
+            "input_id" : "48",
+            "label" : "19",
+            "layer_pos" : 9,
+            "name" : "superiorfrontal",
+            "slice_pos" : 9,
+            "weight" : -8.9047079,
+            "x" : 27,
+            "y" : 48
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "20",
+            "input_id" : "1",
+            "label" : "20",
+            "layer_pos" : 10,
+            "name" : "parsorbitalis",
+            "slice_pos" : 10,
+            "weight" : -15.988203,
+            "x" : 30,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "21",
+            "input_id" : "1",
+            "label" : "21",
+            "layer_pos" : 11,
+            "name" : "parsorbitalis",
+            "slice_pos" : 11,
+            "weight" : -12.221639,
+            "x" : 33,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "22",
+            "input_id" : "6",
+            "label" : "22",
+            "layer_pos" : 10,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 10,
+            "weight" : -17.359585,
+            "x" : 30,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "23",
+            "input_id" : "6",
+            "label" : "23",
+            "layer_pos" : 11,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 11,
+            "weight" : -11.011461,
+            "x" : 33,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "24",
+            "input_id" : "4",
+            "label" : "24",
+            "layer_pos" : 11,
+            "name" : "parstriangularis",
+            "slice_pos" : 11,
+            "weight" : -11.873386,
+            "x" : 33,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "25",
+            "input_id" : "7",
+            "label" : "25",
+            "layer_pos" : 10,
+            "name" : "superiorfrontal",
+            "slice_pos" : 10,
+            "weight" : -11.229213,
+            "x" : 30,
+            "y" : 7
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "26",
+            "input_id" : "8",
+            "label" : "26",
+            "layer_pos" : 10,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 10,
+            "weight" : -11.635633,
+            "x" : 30,
+            "y" : 8
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "27",
+            "input_id" : "5",
+            "label" : "27",
+            "layer_pos" : 11,
+            "name" : "parsopercularis",
+            "slice_pos" : 11,
+            "weight" : -9.8136892,
+            "x" : 33,
+            "y" : 5
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "28",
+            "input_id" : "47",
+            "label" : "28",
+            "layer_pos" : 10,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 10,
+            "weight" : -13.647989,
+            "x" : 30,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "29",
+            "input_id" : "1",
+            "label" : "29",
+            "layer_pos" : 12,
+            "name" : "parsorbitalis",
+            "slice_pos" : 12,
+            "weight" : -15.128151,
+            "x" : 36,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "30",
+            "input_id" : "4",
+            "label" : "30",
+            "layer_pos" : 12,
+            "name" : "parstriangularis",
+            "slice_pos" : 12,
+            "weight" : -11.296023,
+            "x" : 36,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "31",
+            "input_id" : "6",
+            "label" : "31",
+            "layer_pos" : 12,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 12,
+            "weight" : -14.733793,
+            "x" : 36,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 20,
+            "component_num" : 5,
+            "id" : "32",
+            "input_id" : "7",
+            "label" : "32",
+            "layer_pos" : 12,
+            "name" : "superiorfrontal",
+            "slice_pos" : 12,
+            "weight" : -9.2748528,
+            "x" : 36,
+            "y" : 7
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "33",
+            "input_id" : "1",
+            "label" : "33",
+            "layer_pos" : 13,
+            "name" : "parsorbitalis",
+            "slice_pos" : 13,
+            "weight" : 8.9928675,
+            "x" : 39,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "34",
+            "input_id" : "4",
+            "label" : "34",
+            "layer_pos" : 14,
+            "name" : "parstriangularis",
+            "slice_pos" : 14,
+            "weight" : 8.9816799,
+            "x" : 42,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "35",
+            "input_id" : "4",
+            "label" : "35",
+            "layer_pos" : 15,
+            "name" : "parstriangularis",
+            "slice_pos" : 15,
+            "weight" : 10.75796,
+            "x" : 45,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "36",
+            "input_id" : "1",
+            "label" : "36",
+            "layer_pos" : 15,
+            "name" : "parsorbitalis",
+            "slice_pos" : 15,
+            "weight" : 9.4521389,
+            "x" : 45,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "37",
+            "input_id" : "6",
+            "label" : "37",
+            "layer_pos" : 15,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 15,
+            "weight" : 10.354798,
+            "x" : 45,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "38",
+            "input_id" : "4",
+            "label" : "38",
+            "layer_pos" : 16,
+            "name" : "parstriangularis",
+            "slice_pos" : 16,
+            "weight" : 9.9267292,
+            "x" : 48,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "39",
+            "input_id" : "6",
+            "label" : "39",
+            "layer_pos" : 16,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 16,
+            "weight" : 9.4384632,
+            "x" : 48,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "40",
+            "input_id" : "4",
+            "label" : "40",
+            "layer_pos" : 17,
+            "name" : "parstriangularis",
+            "slice_pos" : 17,
+            "weight" : 10.248152,
+            "x" : 51,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "41",
+            "input_id" : "6",
+            "label" : "41",
+            "layer_pos" : 17,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 17,
+            "weight" : 10.530879,
+            "x" : 51,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "42",
+            "input_id" : "1",
+            "label" : "42",
+            "layer_pos" : 17,
+            "name" : "parsorbitalis",
+            "slice_pos" : 17,
+            "weight" : 9.5062122,
+            "x" : 51,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "43",
+            "input_id" : "7",
+            "label" : "43",
+            "layer_pos" : 17,
+            "name" : "superiorfrontal",
+            "slice_pos" : 17,
+            "weight" : 10.420457,
+            "x" : 51,
+            "y" : 7
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "44",
+            "input_id" : "47",
+            "label" : "44",
+            "layer_pos" : 17,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 17,
+            "weight" : 9.7408867,
+            "x" : 51,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "45",
+            "input_id" : "48",
+            "label" : "45",
+            "layer_pos" : 17,
+            "name" : "superiorfrontal",
+            "slice_pos" : 17,
+            "weight" : 10.391698,
+            "x" : 51,
+            "y" : 48
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "46",
+            "input_id" : "46",
+            "label" : "46",
+            "layer_pos" : 16,
+            "name" : "parsopercularis",
+            "slice_pos" : 16,
+            "weight" : 8.8338633,
+            "x" : 48,
+            "y" : 46
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "47",
+            "input_id" : "49",
+            "label" : "47",
+            "layer_pos" : 17,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 17,
+            "weight" : 9.5225868,
+            "x" : 51,
+            "y" : 49
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "48",
+            "input_id" : "48",
+            "label" : "48",
+            "layer_pos" : 18,
+            "name" : "superiorfrontal",
+            "slice_pos" : 18,
+            "weight" : 8.7837639,
+            "x" : 54,
+            "y" : 48
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "49",
+            "input_id" : "52",
+            "label" : "49",
+            "layer_pos" : 17,
+            "name" : "rostralanteriorcingulate",
+            "slice_pos" : 17,
+            "weight" : 8.7831459,
+            "x" : 51,
+            "y" : 52
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "50",
+            "input_id" : "6",
+            "label" : "50",
+            "layer_pos" : 19,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 19,
+            "weight" : 9.2254267,
+            "x" : 57,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "51",
+            "input_id" : "1",
+            "label" : "51",
+            "layer_pos" : 19,
+            "name" : "parsorbitalis",
+            "slice_pos" : 19,
+            "weight" : 13.340734,
+            "x" : 57,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "52",
+            "input_id" : "1",
+            "label" : "52",
+            "layer_pos" : 20,
+            "name" : "parsorbitalis",
+            "slice_pos" : 20,
+            "weight" : 9.1427126,
+            "x" : 60,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 33,
+            "component_num" : 6,
+            "id" : "53",
+            "input_id" : "4",
+            "label" : "53",
+            "layer_pos" : 19,
+            "name" : "parstriangularis",
+            "slice_pos" : 19,
+            "weight" : 9.0702963,
+            "x" : 57,
+            "y" : 4
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "54",
+            "input_id" : "48",
+            "label" : "54",
+            "layer_pos" : 21,
+            "name" : "superiorfrontal",
+            "slice_pos" : 21,
+            "weight" : -12.136168,
+            "x" : 63,
+            "y" : 48
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "55",
+            "input_id" : "48",
+            "label" : "55",
+            "layer_pos" : 22,
+            "name" : "superiorfrontal",
+            "slice_pos" : 22,
+            "weight" : -11.70232,
+            "x" : 66,
+            "y" : 48
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "56",
+            "input_id" : "49",
+            "label" : "56",
+            "layer_pos" : 21,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 21,
+            "weight" : -9.1882372,
+            "x" : 63,
+            "y" : 49
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "57",
+            "input_id" : "49",
+            "label" : "57",
+            "layer_pos" : 22,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 22,
+            "weight" : -8.9721937,
+            "x" : 66,
+            "y" : 49
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "58",
+            "input_id" : "47",
+            "label" : "58",
+            "layer_pos" : 22,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 22,
+            "weight" : -11.58452,
+            "x" : 66,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "59",
+            "input_id" : "47",
+            "label" : "59",
+            "layer_pos" : 23,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 23,
+            "weight" : -11.661072,
+            "x" : 69,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "60",
+            "input_id" : "47",
+            "label" : "60",
+            "layer_pos" : 24,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 24,
+            "weight" : -10.504179,
+            "x" : 72,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "61",
+            "input_id" : "47",
+            "label" : "61",
+            "layer_pos" : 25,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 25,
+            "weight" : -11.532136,
+            "x" : 75,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "62",
+            "input_id" : "6",
+            "label" : "62",
+            "layer_pos" : 25,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 25,
+            "weight" : -12.896381,
+            "x" : 75,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "63",
+            "input_id" : "42",
+            "label" : "63",
+            "layer_pos" : 25,
+            "name" : "parsorbitalis",
+            "slice_pos" : 25,
+            "weight" : -8.8750963,
+            "x" : 75,
+            "y" : 42
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "64",
+            "input_id" : "49",
+            "label" : "64",
+            "layer_pos" : 25,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 25,
+            "weight" : -11.044675,
+            "x" : 75,
+            "y" : 49
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "65",
+            "input_id" : "1",
+            "label" : "65",
+            "layer_pos" : 25,
+            "name" : "parsorbitalis",
+            "slice_pos" : 25,
+            "weight" : -13.744647,
+            "x" : 75,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "66",
+            "input_id" : "1",
+            "label" : "66",
+            "layer_pos" : 26,
+            "name" : "parsorbitalis",
+            "slice_pos" : 26,
+            "weight" : -15.562212,
+            "x" : 78,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "67",
+            "input_id" : "4",
+            "label" : "67",
+            "layer_pos" : 25,
+            "name" : "parstriangularis",
+            "slice_pos" : 25,
+            "weight" : -9.4349813,
+            "x" : 75,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "68",
+            "input_id" : "4",
+            "label" : "68",
+            "layer_pos" : 26,
+            "name" : "parstriangularis",
+            "slice_pos" : 26,
+            "weight" : -12.661891,
+            "x" : 78,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "69",
+            "input_id" : "6",
+            "label" : "69",
+            "layer_pos" : 26,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 26,
+            "weight" : -14.272216,
+            "x" : 78,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "70",
+            "input_id" : "47",
+            "label" : "70",
+            "layer_pos" : 26,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 26,
+            "weight" : -9.6999273,
+            "x" : 78,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "71",
+            "input_id" : "45",
+            "label" : "71",
+            "layer_pos" : 26,
+            "name" : "parstriangularis",
+            "slice_pos" : 26,
+            "weight" : -9.8460941,
+            "x" : 78,
+            "y" : 45
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "72",
+            "input_id" : "46",
+            "label" : "72",
+            "layer_pos" : 26,
+            "name" : "parsopercularis",
+            "slice_pos" : 26,
+            "weight" : -10.154987,
+            "x" : 78,
+            "y" : 46
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "73",
+            "input_id" : "1",
+            "label" : "73",
+            "layer_pos" : 27,
+            "name" : "parsorbitalis",
+            "slice_pos" : 27,
+            "weight" : -11.803457,
+            "x" : 81,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "74",
+            "input_id" : "4",
+            "label" : "74",
+            "layer_pos" : 27,
+            "name" : "parstriangularis",
+            "slice_pos" : 27,
+            "weight" : -11.394392,
+            "x" : 81,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "75",
+            "input_id" : "6",
+            "label" : "75",
+            "layer_pos" : 27,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 27,
+            "weight" : -11.283263,
+            "x" : 81,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "76",
+            "input_id" : "46",
+            "label" : "76",
+            "layer_pos" : 27,
+            "name" : "parsopercularis",
+            "slice_pos" : 27,
+            "weight" : -8.7952986,
+            "x" : 81,
+            "y" : 46
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "77",
+            "input_id" : "5",
+            "label" : "77",
+            "layer_pos" : 27,
+            "name" : "parsopercularis",
+            "slice_pos" : 27,
+            "weight" : -9.0943289,
+            "x" : 81,
+            "y" : 5
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 54,
+            "component_num" : 7,
+            "id" : "78",
+            "input_id" : "6",
+            "label" : "78",
+            "layer_pos" : 28,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 28,
+            "weight" : -11.321197,
+            "x" : 84,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 79,
+            "component_num" : 8,
+            "id" : "79",
+            "input_id" : "6",
+            "label" : "79",
+            "layer_pos" : 29,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 29,
+            "weight" : -9.7054996,
+            "x" : 87,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 79,
+            "component_num" : 8,
+            "id" : "80",
+            "input_id" : "6",
+            "label" : "80",
+            "layer_pos" : 30,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 30,
+            "weight" : -11.380374,
+            "x" : 90,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 79,
+            "component_num" : 8,
+            "id" : "81",
+            "input_id" : "12",
+            "label" : "81",
+            "layer_pos" : 31,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 31,
+            "weight" : -10.151896,
+            "x" : 93,
+            "y" : 12
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 82,
+            "component_num" : 9,
+            "id" : "82",
+            "input_id" : "6",
+            "label" : "82",
+            "layer_pos" : 32,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 32,
+            "weight" : -9.8047304,
+            "x" : 96,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 82,
+            "component_num" : 9,
+            "id" : "83",
+            "input_id" : "6",
+            "label" : "83",
+            "layer_pos" : 33,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 33,
+            "weight" : -12.636127,
+            "x" : 99,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 82,
+            "component_num" : 9,
+            "id" : "84",
+            "input_id" : "1",
+            "label" : "84",
+            "layer_pos" : 33,
+            "name" : "parsorbitalis",
+            "slice_pos" : 33,
+            "weight" : -9.0352268,
+            "x" : 99,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 82,
+            "component_num" : 9,
+            "id" : "85",
+            "input_id" : "8",
+            "label" : "85",
+            "layer_pos" : 33,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 33,
+            "weight" : -10.421694,
+            "x" : 99,
+            "y" : 8
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 82,
+            "component_num" : 9,
+            "id" : "86",
+            "input_id" : "12",
+            "label" : "86",
+            "layer_pos" : 34,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 34,
+            "weight" : -9.0585651,
+            "x" : 102,
+            "y" : 12
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 87,
+            "component_num" : 12,
+            "id" : "87",
+            "input_id" : "6",
+            "label" : "87",
+            "layer_pos" : 35,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 35,
+            "weight" : -12.705802,
+            "x" : 105,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 87,
+            "component_num" : 12,
+            "id" : "88",
+            "input_id" : "6",
+            "label" : "88",
+            "layer_pos" : 36,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 36,
+            "weight" : -11.379358,
+            "x" : 108,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 87,
+            "component_num" : 12,
+            "id" : "89",
+            "input_id" : "47",
+            "label" : "89",
+            "layer_pos" : 35,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 35,
+            "weight" : -12.8236,
+            "x" : 105,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 87,
+            "component_num" : 12,
+            "id" : "90",
+            "input_id" : "47",
+            "label" : "90",
+            "layer_pos" : 36,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 36,
+            "weight" : -11.577201,
+            "x" : 108,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 87,
+            "component_num" : 12,
+            "id" : "91",
+            "input_id" : "1",
+            "label" : "91",
+            "layer_pos" : 36,
+            "name" : "parsorbitalis",
+            "slice_pos" : 36,
+            "weight" : -9.7496061,
+            "x" : 108,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "92",
+            "input_id" : "1",
+            "label" : "92",
+            "layer_pos" : 37,
+            "name" : "parsorbitalis",
+            "slice_pos" : 37,
+            "weight" : 8.910882,
+            "x" : 111,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "93",
+            "input_id" : "1",
+            "label" : "93",
+            "layer_pos" : 38,
+            "name" : "parsorbitalis",
+            "slice_pos" : 38,
+            "weight" : 10.685439,
+            "x" : 114,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "94",
+            "input_id" : "6",
+            "label" : "94",
+            "layer_pos" : 37,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 37,
+            "weight" : 10.000859,
+            "x" : 111,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "95",
+            "input_id" : "6",
+            "label" : "95",
+            "layer_pos" : 38,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 38,
+            "weight" : 9.1004181,
+            "x" : 114,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "96",
+            "input_id" : "4",
+            "label" : "96",
+            "layer_pos" : 38,
+            "name" : "parstriangularis",
+            "slice_pos" : 38,
+            "weight" : 9.0412884,
+            "x" : 114,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "97",
+            "input_id" : "12",
+            "label" : "97",
+            "layer_pos" : 38,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 38,
+            "weight" : 10.576044,
+            "x" : 114,
+            "y" : 12
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "98",
+            "input_id" : "4",
+            "label" : "98",
+            "layer_pos" : 39,
+            "name" : "parstriangularis",
+            "slice_pos" : 39,
+            "weight" : 9.6503849,
+            "x" : 117,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "99",
+            "input_id" : "12",
+            "label" : "99",
+            "layer_pos" : 39,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 39,
+            "weight" : 8.8719778,
+            "x" : 117,
+            "y" : 12
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "100",
+            "input_id" : "11",
+            "label" : "100",
+            "layer_pos" : 38,
+            "name" : "rostralanteriorcingulate",
+            "slice_pos" : 38,
+            "weight" : 8.8802404,
+            "x" : 114,
+            "y" : 11
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "101",
+            "input_id" : "52",
+            "label" : "101",
+            "layer_pos" : 39,
+            "name" : "rostralanteriorcingulate",
+            "slice_pos" : 39,
+            "weight" : 10.671564,
+            "x" : 117,
+            "y" : 52
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 92,
+            "component_num" : 14,
+            "id" : "102",
+            "input_id" : "53",
+            "label" : "102",
+            "layer_pos" : 39,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 39,
+            "weight" : 10.86247,
+            "x" : 117,
+            "y" : 53
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 103,
+            "component_num" : 15,
+            "id" : "103",
+            "input_id" : "5",
+            "label" : "103",
+            "layer_pos" : 40,
+            "name" : "parsopercularis",
+            "slice_pos" : 40,
+            "weight" : 13.3627,
+            "x" : 120,
+            "y" : 5
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 103,
+            "component_num" : 15,
+            "id" : "104",
+            "input_id" : "5",
+            "label" : "104",
+            "layer_pos" : 41,
+            "name" : "parsopercularis",
+            "slice_pos" : 41,
+            "weight" : 8.7000237,
+            "x" : 123,
+            "y" : 5
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "105",
+            "input_id" : "1",
+            "label" : "105",
+            "layer_pos" : 42,
+            "name" : "parsorbitalis",
+            "slice_pos" : 42,
+            "weight" : 13.282673,
+            "x" : 126,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "106",
+            "input_id" : "1",
+            "label" : "106",
+            "layer_pos" : 43,
+            "name" : "parsorbitalis",
+            "slice_pos" : 43,
+            "weight" : 12.469544,
+            "x" : 129,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "107",
+            "input_id" : "6",
+            "label" : "107",
+            "layer_pos" : 42,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 42,
+            "weight" : 10.463019,
+            "x" : 126,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "108",
+            "input_id" : "6",
+            "label" : "108",
+            "layer_pos" : 43,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 43,
+            "weight" : 11.69189,
+            "x" : 129,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "109",
+            "input_id" : "47",
+            "label" : "109",
+            "layer_pos" : 42,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 42,
+            "weight" : 12.135757,
+            "x" : 126,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "110",
+            "input_id" : "47",
+            "label" : "110",
+            "layer_pos" : 43,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 43,
+            "weight" : 14.281638,
+            "x" : 129,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "111",
+            "input_id" : "42",
+            "label" : "111",
+            "layer_pos" : 43,
+            "name" : "parsorbitalis",
+            "slice_pos" : 43,
+            "weight" : 8.863575,
+            "x" : 129,
+            "y" : 42
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "112",
+            "input_id" : "1",
+            "label" : "112",
+            "layer_pos" : 44,
+            "name" : "parsorbitalis",
+            "slice_pos" : 44,
+            "weight" : 11.149526,
+            "x" : 132,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "113",
+            "input_id" : "6",
+            "label" : "113",
+            "layer_pos" : 44,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 44,
+            "weight" : 11.672018,
+            "x" : 132,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "114",
+            "input_id" : "42",
+            "label" : "114",
+            "layer_pos" : 44,
+            "name" : "parsorbitalis",
+            "slice_pos" : 44,
+            "weight" : 8.8261003,
+            "x" : 132,
+            "y" : 42
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "115",
+            "input_id" : "47",
+            "label" : "115",
+            "layer_pos" : 44,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 44,
+            "weight" : 16.182159,
+            "x" : 132,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "116",
+            "input_id" : "1",
+            "label" : "116",
+            "layer_pos" : 45,
+            "name" : "parsorbitalis",
+            "slice_pos" : 45,
+            "weight" : 9.4848623,
+            "x" : 135,
+            "y" : 1
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "117",
+            "input_id" : "42",
+            "label" : "117",
+            "layer_pos" : 45,
+            "name" : "parsorbitalis",
+            "slice_pos" : 45,
+            "weight" : 8.9137173,
+            "x" : 135,
+            "y" : 42
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "118",
+            "input_id" : "47",
+            "label" : "118",
+            "layer_pos" : 45,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 45,
+            "weight" : 12.536177,
+            "x" : 135,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "119",
+            "input_id" : "49",
+            "label" : "119",
+            "layer_pos" : 45,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 45,
+            "weight" : 9.2944355,
+            "x" : 135,
+            "y" : 49
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "120",
+            "input_id" : "42",
+            "label" : "120",
+            "layer_pos" : 46,
+            "name" : "parsorbitalis",
+            "slice_pos" : 46,
+            "weight" : 9.4231567,
+            "x" : 138,
+            "y" : 42
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "121",
+            "input_id" : "47",
+            "label" : "121",
+            "layer_pos" : 46,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 46,
+            "weight" : 14.451584,
+            "x" : 138,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "122",
+            "input_id" : "49",
+            "label" : "122",
+            "layer_pos" : 46,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 46,
+            "weight" : 9.4781675,
+            "x" : 138,
+            "y" : 49
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "123",
+            "input_id" : "48",
+            "label" : "123",
+            "layer_pos" : 46,
+            "name" : "superiorfrontal",
+            "slice_pos" : 46,
+            "weight" : 10.966515,
+            "x" : 138,
+            "y" : 48
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "124",
+            "input_id" : "59",
+            "label" : "124",
+            "layer_pos" : 45,
+            "name" : "inferiorparietal",
+            "slice_pos" : 45,
+            "weight" : 8.9110641,
+            "x" : 135,
+            "y" : 59
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "125",
+            "input_id" : "47",
+            "label" : "125",
+            "layer_pos" : 47,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 47,
+            "weight" : 10.145355,
+            "x" : 141,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 105,
+            "component_num" : 17,
+            "id" : "126",
+            "input_id" : "47",
+            "label" : "126",
+            "layer_pos" : 48,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 48,
+            "weight" : 9.2594948,
+            "x" : 144,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 127,
+            "component_num" : 18,
+            "id" : "127",
+            "input_id" : "53",
+            "label" : "127",
+            "layer_pos" : 49,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 49,
+            "weight" : 10.975037,
+            "x" : 147,
+            "y" : 53
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 127,
+            "component_num" : 18,
+            "id" : "128",
+            "input_id" : "53",
+            "label" : "128",
+            "layer_pos" : 50,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 50,
+            "weight" : 11.41906,
+            "x" : 150,
+            "y" : 53
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 129,
+            "component_num" : 20,
+            "id" : "129",
+            "input_id" : "47",
+            "label" : "129",
+            "layer_pos" : 51,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 51,
+            "weight" : -9.2202473,
+            "x" : 153,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 129,
+            "component_num" : 20,
+            "id" : "130",
+            "input_id" : "47",
+            "label" : "130",
+            "layer_pos" : 52,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 52,
+            "weight" : -11.358039,
+            "x" : 156,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 129,
+            "component_num" : 20,
+            "id" : "131",
+            "input_id" : "43",
+            "label" : "131",
+            "layer_pos" : 53,
+            "name" : "frontalpole",
+            "slice_pos" : 53,
+            "weight" : -10.244637,
+            "x" : 159,
+            "y" : 43
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 132,
+            "component_num" : 21,
+            "id" : "132",
+            "input_id" : "4",
+            "label" : "132",
+            "layer_pos" : 54,
+            "name" : "parstriangularis",
+            "slice_pos" : 54,
+            "weight" : 11.83071,
+            "x" : 162,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 132,
+            "component_num" : 21,
+            "id" : "133",
+            "input_id" : "4",
+            "label" : "133",
+            "layer_pos" : 55,
+            "name" : "parstriangularis",
+            "slice_pos" : 55,
+            "weight" : 9.0152531,
+            "x" : 165,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 132,
+            "component_num" : 21,
+            "id" : "134",
+            "input_id" : "1",
+            "label" : "134",
+            "layer_pos" : 55,
+            "name" : "parsorbitalis",
+            "slice_pos" : 55,
+            "weight" : 9.9456978,
+            "x" : 165,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 135,
+            "component_num" : 24,
+            "id" : "135",
+            "input_id" : "12",
+            "label" : "135",
+            "layer_pos" : 56,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 56,
+            "weight" : -9.3962049,
+            "x" : 168,
+            "y" : 12
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 135,
+            "component_num" : 24,
+            "id" : "136",
+            "input_id" : "48",
+            "label" : "136",
+            "layer_pos" : 57,
+            "name" : "superiorfrontal",
+            "slice_pos" : 57,
+            "weight" : 8.9002275,
+            "x" : 171,
+            "y" : 48
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 135,
+            "component_num" : 24,
+            "id" : "137",
+            "input_id" : "49",
+            "label" : "137",
+            "layer_pos" : 58,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 58,
+            "weight" : 8.9905891,
+            "x" : 174,
+            "y" : 49
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 138,
+            "component_num" : 25,
+            "id" : "138",
+            "input_id" : "63",
+            "label" : "138",
+            "layer_pos" : 59,
+            "name" : "lateraloccipital",
+            "slice_pos" : 59,
+            "weight" : 9.2051954,
+            "x" : 177,
+            "y" : 63
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 138,
+            "component_num" : 25,
+            "id" : "139",
+            "input_id" : "21",
+            "label" : "139",
+            "layer_pos" : 60,
+            "name" : "pericalcarine",
+            "slice_pos" : 60,
+            "weight" : 8.817523,
+            "x" : 180,
+            "y" : 21
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 138,
+            "component_num" : 25,
+            "id" : "140",
+            "input_id" : "1",
+            "label" : "140",
+            "layer_pos" : 61,
+            "name" : "parsorbitalis",
+            "slice_pos" : 61,
+            "weight" : -10.861342,
+            "x" : 183,
+            "y" : 1
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 141,
+            "component_num" : 26,
+            "id" : "141",
+            "input_id" : "47",
+            "label" : "141",
+            "layer_pos" : 62,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 62,
+            "weight" : 11.203205,
+            "x" : 186,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 141,
+            "component_num" : 26,
+            "id" : "142",
+            "input_id" : "47",
+            "label" : "142",
+            "layer_pos" : 63,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 63,
+            "weight" : 8.8371935,
+            "x" : 189,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 141,
+            "component_num" : 26,
+            "id" : "143",
+            "input_id" : "49",
+            "label" : "143",
+            "layer_pos" : 62,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 62,
+            "weight" : 9.741148,
+            "x" : 186,
+            "y" : 49
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 144,
+            "component_num" : 27,
+            "id" : "144",
+            "input_id" : "53",
+            "label" : "144",
+            "layer_pos" : 64,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 64,
+            "weight" : 8.9890547,
+            "x" : 192,
+            "y" : 53
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 144,
+            "component_num" : 27,
+            "id" : "145",
+            "input_id" : "53",
+            "label" : "145",
+            "layer_pos" : 65,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 65,
+            "weight" : 9.5464315,
+            "x" : 195,
+            "y" : 53
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 146,
+            "component_num" : 29,
+            "id" : "146",
+            "input_id" : "46",
+            "label" : "146",
+            "layer_pos" : 66,
+            "name" : "parsopercularis",
+            "slice_pos" : 66,
+            "weight" : -8.8939114,
+            "x" : 198,
+            "y" : 46
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 146,
+            "component_num" : 29,
+            "id" : "147",
+            "input_id" : "46",
+            "label" : "147",
+            "layer_pos" : 67,
+            "name" : "parsopercularis",
+            "slice_pos" : 67,
+            "weight" : -11.312993,
+            "x" : 201,
+            "y" : 46
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "148",
+            "input_id" : "6",
+            "label" : "148",
+            "layer_pos" : 68,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 68,
+            "weight" : -10.62323,
+            "x" : 204,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "149",
+            "input_id" : "6",
+            "label" : "149",
+            "layer_pos" : 69,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 69,
+            "weight" : -16.631163,
+            "x" : 207,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "150",
+            "input_id" : "1",
+            "label" : "150",
+            "layer_pos" : 69,
+            "name" : "parsorbitalis",
+            "slice_pos" : 69,
+            "weight" : -14.100359,
+            "x" : 207,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "151",
+            "input_id" : "8",
+            "label" : "151",
+            "layer_pos" : 69,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 69,
+            "weight" : -10.196053,
+            "x" : 207,
+            "y" : 8
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "152",
+            "input_id" : "47",
+            "label" : "152",
+            "layer_pos" : 69,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 69,
+            "weight" : -10.65719,
+            "x" : 207,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "153",
+            "input_id" : "1",
+            "label" : "153",
+            "layer_pos" : 70,
+            "name" : "parsorbitalis",
+            "slice_pos" : 70,
+            "weight" : -13.647532,
+            "x" : 210,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "154",
+            "input_id" : "6",
+            "label" : "154",
+            "layer_pos" : 70,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 70,
+            "weight" : -14.214784,
+            "x" : 210,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "155",
+            "input_id" : "61",
+            "label" : "155",
+            "layer_pos" : 69,
+            "name" : "cuneus",
+            "slice_pos" : 69,
+            "weight" : 9.682333,
+            "x" : 207,
+            "y" : 61
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "156",
+            "input_id" : "61",
+            "label" : "156",
+            "layer_pos" : 70,
+            "name" : "cuneus",
+            "slice_pos" : 70,
+            "weight" : 9.3761158,
+            "x" : 210,
+            "y" : 61
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "157",
+            "input_id" : "21",
+            "label" : "157",
+            "layer_pos" : 70,
+            "name" : "pericalcarine",
+            "slice_pos" : 70,
+            "weight" : 9.0273647,
+            "x" : 210,
+            "y" : 21
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "158",
+            "input_id" : "1",
+            "label" : "158",
+            "layer_pos" : 71,
+            "name" : "parsorbitalis",
+            "slice_pos" : 71,
+            "weight" : -12.73923,
+            "x" : 213,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "159",
+            "input_id" : "6",
+            "label" : "159",
+            "layer_pos" : 71,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 71,
+            "weight" : -12.957966,
+            "x" : 213,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "160",
+            "input_id" : "6",
+            "label" : "160",
+            "layer_pos" : 72,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 72,
+            "weight" : -9.3396883,
+            "x" : 216,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "161",
+            "input_id" : "6",
+            "label" : "161",
+            "layer_pos" : 73,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 73,
+            "weight" : -13.828611,
+            "x" : 219,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "162",
+            "input_id" : "2",
+            "label" : "162",
+            "layer_pos" : 73,
+            "name" : "frontalpole",
+            "slice_pos" : 73,
+            "weight" : -9.7994556,
+            "x" : 219,
+            "y" : 2
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "163",
+            "input_id" : "47",
+            "label" : "163",
+            "layer_pos" : 73,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 73,
+            "weight" : -10.68959,
+            "x" : 219,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "164",
+            "input_id" : "6",
+            "label" : "164",
+            "layer_pos" : 74,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 74,
+            "weight" : -13.060683,
+            "x" : 222,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "165",
+            "input_id" : "47",
+            "label" : "165",
+            "layer_pos" : 74,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 74,
+            "weight" : -10.513878,
+            "x" : 222,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "166",
+            "input_id" : "1",
+            "label" : "166",
+            "layer_pos" : 74,
+            "name" : "parsorbitalis",
+            "slice_pos" : 74,
+            "weight" : -13.625958,
+            "x" : 222,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "167",
+            "input_id" : "8",
+            "label" : "167",
+            "layer_pos" : 74,
+            "name" : "caudalmiddlefrontal",
+            "slice_pos" : 74,
+            "weight" : -10.375205,
+            "x" : 222,
+            "y" : 8
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "168",
+            "input_id" : "1",
+            "label" : "168",
+            "layer_pos" : 75,
+            "name" : "parsorbitalis",
+            "slice_pos" : 75,
+            "weight" : -9.2973661,
+            "x" : 225,
+            "y" : 1
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "169",
+            "input_id" : "47",
+            "label" : "169",
+            "layer_pos" : 75,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 75,
+            "weight" : -10.507778,
+            "x" : 225,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "170",
+            "input_id" : "2",
+            "label" : "170",
+            "layer_pos" : 75,
+            "name" : "frontalpole",
+            "slice_pos" : 75,
+            "weight" : -12.437905,
+            "x" : 225,
+            "y" : 2
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "171",
+            "input_id" : "3",
+            "label" : "171",
+            "layer_pos" : 75,
+            "name" : "medialorbitofrontal",
+            "slice_pos" : 75,
+            "weight" : -11.303126,
+            "x" : 225,
+            "y" : 3
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "172",
+            "input_id" : "1",
+            "label" : "172",
+            "layer_pos" : 76,
+            "name" : "parsorbitalis",
+            "slice_pos" : 76,
+            "weight" : -15.46139,
+            "x" : 228,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "173",
+            "input_id" : "2",
+            "label" : "173",
+            "layer_pos" : 76,
+            "name" : "frontalpole",
+            "slice_pos" : 76,
+            "weight" : 14.133515,
+            "x" : 228,
+            "y" : 2
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "174",
+            "input_id" : "3",
+            "label" : "174",
+            "layer_pos" : 76,
+            "name" : "medialorbitofrontal",
+            "slice_pos" : 76,
+            "weight" : -9.3871994,
+            "x" : 228,
+            "y" : 3
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "175",
+            "input_id" : "21",
+            "label" : "175",
+            "layer_pos" : 76,
+            "name" : "pericalcarine",
+            "slice_pos" : 76,
+            "weight" : 9.3967924,
+            "x" : 228,
+            "y" : 21
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "176",
+            "input_id" : "3",
+            "label" : "176",
+            "layer_pos" : 77,
+            "name" : "medialorbitofrontal",
+            "slice_pos" : 77,
+            "weight" : -11.960644,
+            "x" : 231,
+            "y" : 3
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "177",
+            "input_id" : "21",
+            "label" : "177",
+            "layer_pos" : 77,
+            "name" : "pericalcarine",
+            "slice_pos" : 77,
+            "weight" : 10.052296,
+            "x" : 231,
+            "y" : 21
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "178",
+            "input_id" : "44",
+            "label" : "178",
+            "layer_pos" : 77,
+            "name" : "medialorbitofrontal",
+            "slice_pos" : 77,
+            "weight" : -9.6264448,
+            "x" : 231,
+            "y" : 44
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "179",
+            "input_id" : "48",
+            "label" : "179",
+            "layer_pos" : 77,
+            "name" : "superiorfrontal",
+            "slice_pos" : 77,
+            "weight" : -9.5285692,
+            "x" : 231,
+            "y" : 48
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "180",
+            "input_id" : "20",
+            "label" : "180",
+            "layer_pos" : 77,
+            "name" : "cuneus",
+            "slice_pos" : 77,
+            "weight" : 10.159491,
+            "x" : 231,
+            "y" : 20
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "181",
+            "input_id" : "20",
+            "label" : "181",
+            "layer_pos" : 78,
+            "name" : "cuneus",
+            "slice_pos" : 78,
+            "weight" : 10.02671,
+            "x" : 234,
+            "y" : 20
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "182",
+            "input_id" : "48",
+            "label" : "182",
+            "layer_pos" : 78,
+            "name" : "superiorfrontal",
+            "slice_pos" : 78,
+            "weight" : -9.1203213,
+            "x" : 234,
+            "y" : 48
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "183",
+            "input_id" : "52",
+            "label" : "183",
+            "layer_pos" : 78,
+            "name" : "rostralanteriorcingulate",
+            "slice_pos" : 78,
+            "weight" : -9.4122152,
+            "x" : 234,
+            "y" : 52
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "184",
+            "input_id" : "9",
+            "label" : "184",
+            "layer_pos" : 77,
+            "name" : "precentral",
+            "slice_pos" : 77,
+            "weight" : 8.6880951,
+            "x" : 231,
+            "y" : 9
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "185",
+            "input_id" : "63",
+            "label" : "185",
+            "layer_pos" : 78,
+            "name" : "lateraloccipital",
+            "slice_pos" : 78,
+            "weight" : 8.7480011,
+            "x" : 234,
+            "y" : 63
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "186",
+            "input_id" : "6",
+            "label" : "186",
+            "layer_pos" : 79,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 79,
+            "weight" : 8.7542009,
+            "x" : 237,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "187",
+            "input_id" : "12",
+            "label" : "187",
+            "layer_pos" : 79,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 79,
+            "weight" : 9.4255238,
+            "x" : 237,
+            "y" : 12
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "188",
+            "input_id" : "1",
+            "label" : "188",
+            "layer_pos" : 79,
+            "name" : "parsorbitalis",
+            "slice_pos" : 79,
+            "weight" : 11.967827,
+            "x" : 237,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "189",
+            "input_id" : "1",
+            "label" : "189",
+            "layer_pos" : 80,
+            "name" : "parsorbitalis",
+            "slice_pos" : 80,
+            "weight" : 13.412807,
+            "x" : 240,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "190",
+            "input_id" : "5",
+            "label" : "190",
+            "layer_pos" : 79,
+            "name" : "parsopercularis",
+            "slice_pos" : 79,
+            "weight" : 13.213702,
+            "x" : 237,
+            "y" : 5
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "191",
+            "input_id" : "5",
+            "label" : "191",
+            "layer_pos" : 80,
+            "name" : "parsopercularis",
+            "slice_pos" : 80,
+            "weight" : 14.709602,
+            "x" : 240,
+            "y" : 5
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "192",
+            "input_id" : "6",
+            "label" : "192",
+            "layer_pos" : 80,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 80,
+            "weight" : 13.787648,
+            "x" : 240,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "193",
+            "input_id" : "12",
+            "label" : "193",
+            "layer_pos" : 80,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 80,
+            "weight" : 12.059181,
+            "x" : 240,
+            "y" : 12
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "194",
+            "input_id" : "4",
+            "label" : "194",
+            "layer_pos" : 80,
+            "name" : "parstriangularis",
+            "slice_pos" : 80,
+            "weight" : 9.7241764,
+            "x" : 240,
+            "y" : 4
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "195",
+            "input_id" : "1",
+            "label" : "195",
+            "layer_pos" : 81,
+            "name" : "parsorbitalis",
+            "slice_pos" : 81,
+            "weight" : 14.211611,
+            "x" : 243,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "196",
+            "input_id" : "6",
+            "label" : "196",
+            "layer_pos" : 81,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 81,
+            "weight" : 14.783717,
+            "x" : 243,
+            "y" : 6
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "197",
+            "input_id" : "12",
+            "label" : "197",
+            "layer_pos" : 81,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 81,
+            "weight" : 9.1808767,
+            "x" : 243,
+            "y" : 12
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 198,
+            "component_num" : 32,
+            "id" : "198",
+            "input_id" : "20",
+            "label" : "198",
+            "layer_pos" : 80,
+            "name" : "cuneus",
+            "slice_pos" : 80,
+            "weight" : 11.011732,
+            "x" : 240,
+            "y" : 20
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 198,
+            "component_num" : 32,
+            "id" : "199",
+            "input_id" : "20",
+            "label" : "199",
+            "layer_pos" : 81,
+            "name" : "cuneus",
+            "slice_pos" : 81,
+            "weight" : 9.9576435,
+            "x" : 243,
+            "y" : 20
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "200",
+            "input_id" : "7",
+            "label" : "200",
+            "layer_pos" : 81,
+            "name" : "superiorfrontal",
+            "slice_pos" : 81,
+            "weight" : 8.7760754,
+            "x" : 243,
+            "y" : 7
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 148,
+            "component_num" : 31,
+            "id" : "201",
+            "input_id" : "11",
+            "label" : "201",
+            "layer_pos" : 81,
+            "name" : "rostralanteriorcingulate",
+            "slice_pos" : 81,
+            "weight" : 9.2815752,
+            "x" : 243,
+            "y" : 11
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 198,
+            "component_num" : 32,
+            "id" : "202",
+            "input_id" : "17",
+            "label" : "202",
+            "layer_pos" : 80,
+            "name" : "superiorparietal",
+            "slice_pos" : 80,
+            "weight" : 10.928792,
+            "x" : 240,
+            "y" : 17
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 198,
+            "component_num" : 32,
+            "id" : "203",
+            "input_id" : "63",
+            "label" : "203",
+            "layer_pos" : 81,
+            "name" : "lateraloccipital",
+            "slice_pos" : 81,
+            "weight" : 8.799737,
+            "x" : 243,
+            "y" : 63
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 204,
+            "component_num" : 33,
+            "id" : "204",
+            "input_id" : "1",
+            "label" : "204",
+            "layer_pos" : 82,
+            "name" : "parsorbitalis",
+            "slice_pos" : 82,
+            "weight" : 9.1187992,
+            "x" : 246,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 204,
+            "component_num" : 33,
+            "id" : "205",
+            "input_id" : "1",
+            "label" : "205",
+            "layer_pos" : 83,
+            "name" : "parsorbitalis",
+            "slice_pos" : 83,
+            "weight" : 9.69874,
+            "x" : 249,
+            "y" : 1
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 206,
+            "component_num" : 35,
+            "id" : "206",
+            "input_id" : "53",
+            "label" : "206",
+            "layer_pos" : 84,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 84,
+            "weight" : -12.923379,
+            "x" : 252,
+            "y" : 53
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 206,
+            "component_num" : 35,
+            "id" : "207",
+            "input_id" : "53",
+            "label" : "207",
+            "layer_pos" : 85,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 85,
+            "weight" : -13.082606,
+            "x" : 255,
+            "y" : 53
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 206,
+            "component_num" : 35,
+            "id" : "208",
+            "input_id" : "48",
+            "label" : "208",
+            "layer_pos" : 84,
+            "name" : "superiorfrontal",
+            "slice_pos" : 84,
+            "weight" : -9.0289631,
+            "x" : 252,
+            "y" : 48
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 206,
+            "component_num" : 35,
+            "id" : "209",
+            "input_id" : "52",
+            "label" : "209",
+            "layer_pos" : 84,
+            "name" : "rostralanteriorcingulate",
+            "slice_pos" : 84,
+            "weight" : -10.249573,
+            "x" : 252,
+            "y" : 52
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 206,
+            "component_num" : 35,
+            "id" : "210",
+            "input_id" : "53",
+            "label" : "210",
+            "layer_pos" : 86,
+            "name" : "caudalanteriorcingulate",
+            "slice_pos" : 86,
+            "weight" : -11.494661,
+            "x" : 258,
+            "y" : 53
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 211,
+            "component_num" : 36,
+            "id" : "211",
+            "input_id" : "47",
+            "label" : "211",
+            "layer_pos" : 86,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 86,
+            "weight" : -11.162561,
+            "x" : 258,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 211,
+            "component_num" : 36,
+            "id" : "212",
+            "input_id" : "47",
+            "label" : "212",
+            "layer_pos" : 87,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 87,
+            "weight" : -14.217495,
+            "x" : 261,
+            "y" : 47
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 211,
+            "component_num" : 36,
+            "id" : "213",
+            "input_id" : "6",
+            "label" : "213",
+            "layer_pos" : 87,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 87,
+            "weight" : -9.7345581,
+            "x" : 261,
+            "y" : 6
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 214,
+            "component_num" : 39,
+            "id" : "214",
+            "input_id" : "47",
+            "label" : "214",
+            "layer_pos" : 88,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 88,
+            "weight" : 10.055506,
+            "x" : 264,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 214,
+            "component_num" : 39,
+            "id" : "215",
+            "input_id" : "47",
+            "label" : "215",
+            "layer_pos" : 89,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 89,
+            "weight" : 9.9165087,
+            "x" : 267,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 214,
+            "component_num" : 39,
+            "id" : "216",
+            "input_id" : "47",
+            "label" : "216",
+            "layer_pos" : 90,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 90,
+            "weight" : 11.559496,
+            "x" : 270,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 214,
+            "component_num" : 39,
+            "id" : "217",
+            "input_id" : "47",
+            "label" : "217",
+            "layer_pos" : 91,
+            "name" : "rostralmiddlefrontal",
+            "slice_pos" : 91,
+            "weight" : 10.388762,
+            "x" : 273,
+            "y" : 47
+        },
+        {
+            "brain side" : "left",
+            "component_id" : 214,
+            "component_num" : 39,
+            "id" : "218",
+            "input_id" : "48",
+            "label" : "218",
+            "layer_pos" : 91,
+            "name" : "superiorfrontal",
+            "slice_pos" : 91,
+            "weight" : 11.166691,
+            "x" : 273,
+            "y" : 48
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 219,
+            "component_num" : 40,
+            "id" : "219",
+            "input_id" : "1",
+            "label" : "219",
+            "layer_pos" : 92,
+            "name" : "parsorbitalis",
+            "slice_pos" : 92,
+            "weight" : -8.7653236,
+            "x" : 276,
+            "y" : 1
+        },
+        {
+            "brain side" : "right",
+            "component_id" : 219,
+            "component_num" : 40,
+            "id" : "220",
+            "input_id" : "1",
+            "label" : "220",
+            "layer_pos" : 93,
+            "name" : "parsorbitalis",
+            "slice_pos" : 93,
+            "weight" : -9.1902838,
+            "x" : 279,
+            "y" : 1
+        }
+    ]
+}
